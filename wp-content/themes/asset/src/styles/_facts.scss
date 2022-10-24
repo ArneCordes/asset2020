@@ -1,0 +1,23 @@
+.facts {
+  display: flex;
+  justify-content: center;
+  padding-top: 180px;
+  gap: 20px;
+}
+
+.facts__item {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.facts__number {
+  font-family: 'Greta Text Bold 3';
+  color: $color-main;
+  font-size: 4.7rem;
+}
+
+.facts__caption {
+  font-size: 0.94rem;
+  text-transform: uppercase;
+  color: $color-darkgray;
+}

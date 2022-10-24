@@ -1,0 +1,54 @@
+.slider__nav-buttons {
+  display: flex;
+}
+
+body .slider__button {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:after {
+    font-family: 'icomoon';
+    font-size: 16px;
+    color: #000;
+  }
+
+  &, &:after {
+    transition: all $transition-speed;
+  }
+
+  &:hover {
+    border-color: $color-main;
+
+    &:after {
+      color: $color-main;
+    }
+  }
+}
+
+.slider__nav-buttons--white .slider__button {
+  border-color: #fff;
+
+  &:after {
+    color: #fff;
+  }
+}
+
+body .slider__button--prev:after {
+  content: "\e900";
+  padding-right: 1px;
+}
+
+body .slider__button--next:after {
+  content: "\e901";
+  padding-left: 1px;
+}

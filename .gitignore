@@ -1,0 +1,10 @@
+.DS_Store
+/.htaccess
+wp-content/themes/asset/node_modules/
+wp-config.php
+wp-content/uploads/
+wp-content/debug.log
+wp-content/advanced-cache.php
+wp-content/cache/
+wp-content/wp-rocket-config/
+wp-content/wflogs/

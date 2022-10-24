@@ -1,0 +1,50 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3283180, 2016-09-14T08:35:38-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: BlairITCStd-Bold by ITC
+ * URL: http://www.myfonts.com/fonts/itc/blair/std-bold/
+ * Licensed pageviews: 250,000
+ *
+ * Webfont: BlairITCStd-Light by ITC
+ * URL: http://www.myfonts.com/fonts/itc/blair/std-light/
+ * Licensed pageviews: 500,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3283180
+ * Webfonts copyright: Copyright 1997 International Typeface Corporation. All rights reserved.
+ *
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3218ec");
+
+
+@font-face {
+  font-family: 'BlairITCStd';
+  font-weight: 600;
+  src: url('3218EC_0_0.eot');
+  src: url('3218EC_0_0.eot?#iefix') format('embedded-opentype'),
+       url('3218EC_0_0.woff2') format('woff2'),
+       url('3218EC_0_0.woff') format('woff'),
+       url('3218EC_0_0.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'BlairITCStd';
+  font-weight: 400;
+  src: url('3218EC_1_0.eot');
+  src: url('3218EC_1_0.eot?#iefix') format('embedded-opentype'),
+       url('3218EC_1_0.woff2') format('woff2'),
+       url('3218EC_1_0.woff') format('woff'),
+       url('3218EC_1_0.ttf') format('truetype');
+}

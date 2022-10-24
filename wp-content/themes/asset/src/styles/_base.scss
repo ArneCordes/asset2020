@@ -1,0 +1,17 @@
+html {
+  @extend %font-greta;
+  font-size: 16px;
+}
+
+body {
+  padding-top: 115px;
+  color: $color-text;
+}
+
+p {
+  line-height: 1.8;
+}
+
+strong {
+  font-family: "Greta Text Bold 3";
+}

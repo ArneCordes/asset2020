@@ -1,0 +1,63 @@
+.section {
+  padding: 120px 0;
+}
+
+.section--topspace-halve {
+  padding-top: 70px;
+}
+
+.section--bottomspace-halve {
+  padding-bottom: 70px;
+}
+
+.section--topspace-x2 {
+  padding-top: 240px;
+}
+
+.section--bottomspace-x2 {
+  padding-bottom: 240px;
+}
+
+.section--bg-lightgray {
+  background-color: $color-lightgray;
+}
+
+.section--half-bg {
+  background: linear-gradient(to bottom, transparent, transparent 50%, $color-darkgray 50%, $color-darkgray 100%);
+}
+
+.section__title {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  color: $color-darkgray;
+  background: url("../images/section-title-line.svg") no-repeat -100px calc(50% + 1px);
+}
+
+.section__title--arrow {
+  background-position: left calc(50% + 1px);
+}
+
+.section__title--text-left {
+  justify-content: flex-start;
+}
+
+.section__title--text-center {
+  justify-content: center;
+}
+
+.section__title-text {
+  font-size: 1.25rem;
+  margin-right: 215px;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+.section__title--text-left .section__title-text {
+  margin-left: 125px;
+}
+
+.section__title--text-center .section__title-text {
+  margin-right: 0;
+}

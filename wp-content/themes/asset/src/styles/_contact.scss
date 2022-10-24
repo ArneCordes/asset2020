@@ -1,0 +1,46 @@
+.contact {
+  padding-top: 130px;
+  text-align: center;
+}
+
+.contact__headline {
+  @extend %font-blair;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: $color-darkgray;
+}
+
+.contact__text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__buttons {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.contact__buttons-item {
+  flex-basis: 100%;
+}
+
+.contact__buttons-anchor {
+  display: block;
+}
+
+.contact__buttons-icon {
+  height: 45px;
+  width: auto;
+}
+
+.contact__buttons-text {
+  margin-top: 25px;
+  font-family: "Greta Text Bold 3";
+  text-transform: uppercase;
+  color: $color-darkgray;
+}

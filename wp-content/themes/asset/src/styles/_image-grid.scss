@@ -1,0 +1,132 @@
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.image-grid__item {
+  position: relative;
+  aspect-ratio: 2 / 1;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.image-grid__item--highlight {
+  grid-column: 1 / 3;
+  padding: 50px 70px;
+}
+
+.image-grid__item-inner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.image-grid__image-wrapper {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-grid__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+
+a.image-grid__item-inner:hover .image-grid__image {
+  transform: scale(1.3);
+}
+
+.image-grid__content {
+  position: relative;
+  z-index: 50;
+}
+
+.image-grid__content--overlay {
+  position: relative;
+  max-width: 400px;
+}
+
+.image-grid__headline {
+  @extend %font-blair;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $color-darkgray;
+  transition: font-size 1s;
+}
+
+.image-grid__item--default .image-grid__headline {
+  padding: 10px;
+  background-color: rgba(#fff, 0.75);
+}
+
+.image-grid__item--highlight .image-grid__headline {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.image-grid__item--highlight a.image-grid__item-inner:hover .image-grid__headline {
+  font-size: 2rem;
+}
+
+.image-grid__content--overlay .image-grid__headline {
+  transition: opacity 1s;
+}
+
+.image-grid__item:hover .image-grid__content--overlay .image-grid__headline {
+  opacity: 0;
+}
+
+.image-grid__more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 30px;
+  font-family: "Greta Text Regular 3";
+  font-style: italic;
+  box-sizing: border-box;
+  background-color: rgba($color-main, 0.75);
+  color: #fff;
+  text-align: right;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+
+.image-grid__more-text {
+  transition: all 1s;
+  // transition-delay: 0.5s;
+}
+
+.image-grid__content--vertical .image-grid__more {
+  margin-top: 20px;
+}
+
+.image-grid__content--overlay .image-grid__more {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.image-grid__item:not(:hover) .image-grid__more {
+  max-width: 3px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.image-grid__item:not(:hover) .image-grid__more-text {
+  opacity: 0;
+}

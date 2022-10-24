@@ -1,0 +1,38 @@
+$fix-mqs: false !default;
+
+@mixin respond-min($width) {
+  $width: $width + 1;
+  $width: $width + 'px';
+  // If we're outputting for a fixed media query set...
+  @if $fix-mqs {
+    // ...and if we should apply these rules...
+    @if $fix-mqs >= $width {
+      // ...output the content the user gave us.
+      @content;
+    }
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-max($width) {
+  $width: $width + 'px';
+  // If we're outputting for a fixed media query set...
+  @if $fix-mqs {
+    // ...and if we should apply these rules...
+    @if $fix-mqs <= $width {
+      // ...output the content the user gave us.
+      @content;
+    }
+  }
+  @else {
+    // Otherwise, output it using a regular media query
+    @media screen and (max-width: $width) {
+      @content;
+    }
+  }
+}

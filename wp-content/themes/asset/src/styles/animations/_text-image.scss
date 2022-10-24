@@ -1,0 +1,29 @@
+.css-animate .text-image__headline,
+.css-animate .text-image__text,
+.css-animate .text-image__button {
+  opacity: 0;
+  transform: translateX(-70px);
+}
+
+.css-animate--start .text-image__headline,
+.css-animate--start .text-image__text,
+.css-animate--start .text-image__button {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.5s;
+}
+
+.css-animate--start .text-image__headline {
+  transition-delay: 0.2s;
+}
+
+.css-animate .text-image__image-wrapper {
+  opacity: 0;
+  transform: translateX(70px);
+}
+
+.css-animate--start .text-image__image-wrapper {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.5s;
+}

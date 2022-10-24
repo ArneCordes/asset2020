@@ -1,0 +1,29 @@
+.css-animate .image-slider__slide.swiper-slide-visible .image-slider__anchor {
+  opacity: 0;
+}
+
+.css-animate--start .image-slider__slide.swiper-slide-visible .image-slider__anchor {
+  opacity: 1;
+  transition: all 1s;
+  transition-delay: 0.6s;
+}
+
+.css-animate--start .image-slider__slide.swiper-slide-next .image-slider__anchor {
+  transition-delay: 0.7s;
+}
+
+.css-animate--start .image-slider__slide.swiper-slide-next + .image-slider__slide .image-slider__anchor {
+  transition-delay: 0.8s;
+}
+
+.css-animate .image-slider__nav,
+.css-animate .image-slider__footer {
+  opacity: 0;
+}
+
+.css-animate--start .image-slider__nav,
+.css-animate--start .image-slider__footer {
+  opacity: 1;
+  transition: all 1s;
+  transition-delay: 1.2s;
+}
