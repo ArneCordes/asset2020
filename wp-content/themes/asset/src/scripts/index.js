@@ -5,4 +5,5 @@ import './global.js';
 import './main.js';
 import './news-slider.js';
 import './image-slider.js';
+import './single-slider.js';
 import './facts-animations.js';

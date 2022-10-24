@@ -1,0 +1,12 @@
+.thumb-slider__item {
+  cursor: pointer;
+  transition: opacity $transition-speed*2 !important;
+}
+
+.swiper-slide-thumb-active {
+  opacity: 0.5;
+}
+
+.thumb-slider__image-wrapper {
+  aspect-ratio: 1 / 1;
+}

@@ -5,6 +5,7 @@ if(strstr($_SERVER['SERVER_NAME'], '.local')) {
 
 require_once('lib/customizer.php');
 require_once('lib/hero/hero.php');
+require_once('lib/project/project.php');
 
 // Theme setup
 add_action('after_setup_theme', 'theme_setup');

@@ -1,0 +1,1656 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-10-24 20:34+0200\n"
+"PO-Revision-Date: 2022-10-24 20:36+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_x;_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: asset/node_modules\n"
+
+#: asset/lib/customizer.php:6 asset/lib/customizer.php:12
+msgid "Logo"
+msgstr ""
+
+#: asset/lib/customizer.php:20
+msgid "Logo (Brand)"
+msgstr ""
+
+#: asset/lib/hero/hero.php:6
+msgctxt "post type general name"
+msgid "Headers"
+msgstr "Header"
+
+#: asset/lib/hero/hero.php:7
+msgctxt "post type singular name"
+msgid "Header"
+msgstr "Header"
+
+#: asset/lib/hero/hero.php:8
+msgctxt "admin menu"
+msgid "Headers"
+msgstr "Header"
+
+#: asset/lib/hero/hero.php:9
+msgctxt "add new on admin bar"
+msgid "Header"
+msgstr "Header"
+
+#: asset/lib/hero/hero.php:10
+msgctxt "hero"
+msgid "Add New"
+msgstr "Erstellen"
+
+#: asset/lib/hero/hero.php:11
+msgid "Add New header"
+msgstr "Neuen Header hinzufügen"
+
+#: asset/lib/hero/hero.php:12
+msgid "New header"
+msgstr "Neuer Header"
+
+#: asset/lib/hero/hero.php:13
+msgid "Edit header"
+msgstr "Header bearbeiten"
+
+#: asset/lib/hero/hero.php:14
+msgid "View header"
+msgstr "Header ansehen"
+
+#: asset/lib/hero/hero.php:15
+msgid "All headers"
+msgstr "Alle Header"
+
+#: asset/lib/hero/hero.php:16
+msgid "Search headers"
+msgstr "Header suchen"
+
+#: asset/lib/hero/hero.php:17
+msgid "Parent headers:"
+msgstr "Übergeordnete Header:"
+
+#: asset/lib/hero/hero.php:18
+msgid "No headers found."
+msgstr "Keine Header gefunden."
+
+#: asset/lib/hero/hero.php:19
+msgid "No headers found in Trash."
+msgstr "Keine Header im Papierkorb gefunden."
+
+#: asset/lib/project/project.php:6
+msgctxt "post type general name"
+msgid "Projects"
+msgstr "Projekte"
+
+#: asset/lib/project/project.php:7
+msgctxt "post type singular name"
+msgid "Project"
+msgstr "Projekt"
+
+#: asset/lib/project/project.php:8
+msgctxt "admin menu"
+msgid "Projects"
+msgstr "Projekte"
+
+#: asset/lib/project/project.php:9
+msgctxt "add new on admin bar"
+msgid "Project"
+msgstr "Projekt"
+
+#: asset/lib/project/project.php:10
+msgctxt "project"
+msgid "Add New"
+msgstr "Erstellen"
+
+#: asset/lib/project/project.php:11
+msgid "Add New project"
+msgstr "Neues Projekt hinzufügen"
+
+#: asset/lib/project/project.php:12
+msgid "New project"
+msgstr "Neues Projekt"
+
+#: asset/lib/project/project.php:13
+msgid "Edit project"
+msgstr "Projekt bearbeiten"
+
+#: asset/lib/project/project.php:14
+msgid "View project"
+msgstr "Projekt ansehen"
+
+#: asset/lib/project/project.php:15
+msgid "All projects"
+msgstr "Alle Projekte"
+
+#: asset/lib/project/project.php:16
+msgid "Search projects"
+msgstr "Projekte durchsuchen"
+
+#: asset/lib/project/project.php:17
+msgid "Parent projects:"
+msgstr "Übergeordnete Projekte:"
+
+#: asset/lib/project/project.php:18
+msgid "No projects found."
+msgstr "Keine Projekte gefunden."
+
+#: asset/lib/project/project.php:19
+msgid "No projects found in Trash."
+msgstr "Keine Projekte im Papierkorb gefunden."
+
+#~ msgid "Read more"
+#~ msgstr "Mehr erfahren"
+
+#~ msgid "Show more events"
+#~ msgstr "Weitere Veranstaltungen anzeigen"
+
+#~ msgid "Main menu"
+#~ msgstr "Hauptmenü"
+
+#~ msgid "Options"
+#~ msgstr "Optionen"
+
+#~ msgid "Opening hours"
+#~ msgstr "Öffnungszeiten"
+
+#~ msgid "Events"
+#~ msgstr "Veranstaltungen"
+
+#~ msgid "Event"
+#~ msgstr "Veranstaltung"
+
+#~ msgid "Add new event"
+#~ msgstr "Neue Veranstaltung hinzufügen"
+
+#~ msgid "Edit event"
+#~ msgstr "Veranstaltung bearbeiten"
+
+#~ msgid "Gastronomy"
+#~ msgstr "Gastronomie"
+
+#~ msgid "Add new offer"
+#~ msgstr "Neues Angebot hinzufügen"
+
+#~ msgid "Edit offer"
+#~ msgstr "Angebot bearbeiten"
+
+#~ msgid "Groups"
+#~ msgstr "Gruppen"
+
+#~ msgid "Group"
+#~ msgstr "Gruppe"
+
+#~ msgid "Add new group"
+#~ msgstr "Neue Gruppe hinzufügen"
+
+#~ msgid "Edit group"
+#~ msgstr "Gruppe bearbeiten"
+
+#~ msgid "Persons"
+#~ msgstr "Personen"
+
+#~ msgid "Person"
+#~ msgstr "Person"
+
+#~ msgid "Add new person"
+#~ msgstr "Neue Person hinzufügen"
+
+#~ msgid "Edit person"
+#~ msgstr "Person bearbeiten"
+
+#~ msgctxt "post type general name"
+#~ msgid "Events"
+#~ msgstr "Veranstaltungen"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Event"
+#~ msgstr "Veranstaltung"
+
+#~ msgctxt "admin menu"
+#~ msgid "Events"
+#~ msgstr "Veranstaltungen"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Event"
+#~ msgstr "Veranstaltung"
+
+#~ msgid "Add New event"
+#~ msgstr "Neue Veranstaltung erstellen"
+
+#~ msgid "New event"
+#~ msgstr "Neue Veranstaltung"
+
+#~ msgid "View event"
+#~ msgstr "Veranstaltung ansehen"
+
+#~ msgid "All events"
+#~ msgstr "Alle Veranstaltungen"
+
+#~ msgid "Search events"
+#~ msgstr "Veranstaltungen suchen"
+
+#~ msgid "Parent events:"
+#~ msgstr "Übergeordnete Veranstaltungen:"
+
+#~ msgid "No events found."
+#~ msgstr "Keine Veranstaltungen gefunden."
+
+#~ msgid "No events found in Trash."
+#~ msgstr "Keine Veranstaltungen im Papierkorb gefunden."
+
+#~ msgid "Categories"
+#~ msgstr "Kategorien"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#~ msgid "Add new category"
+#~ msgstr "Neue Kategorie hinzufügen"
+
+#~ msgid "Edit category"
+#~ msgstr "Kategorie bearbeiten"
+
+#~ msgctxt "header"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgctxt "post type general name"
+#~ msgid "Info-Sliders"
+#~ msgstr "Info-Slider"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Info-Slider"
+#~ msgstr "Info-Slider"
+
+#~ msgctxt "admin menu"
+#~ msgid "Info-Sliders"
+#~ msgstr "Info-Slider"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Info-Slider"
+#~ msgstr "Info-Slider"
+
+#~ msgctxt "Info-Slider"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "Add New Info-Slider"
+#~ msgstr "Neuen Info-Slider hinzufügen"
+
+#~ msgid "New Info-Slider"
+#~ msgstr "Neuer Info-Slider"
+
+#~ msgid "Edit Info-Slider"
+#~ msgstr "Info-Slider bearbeiten"
+
+#~ msgid "View Info-Slider"
+#~ msgstr "Info-Slider ansehen"
+
+#~ msgid "All Info-Sliders"
+#~ msgstr "Alle Info-Slider"
+
+#~ msgid "Search Info-Sliders"
+#~ msgstr "Info-Slider suchen"
+
+#~ msgid "Parent Info-Sliders:"
+#~ msgstr "Übergeordnete Info-Slider:"
+
+#~ msgid "No Info-Sliders found."
+#~ msgstr "Keine Info-Slider gefunden."
+
+#~ msgid "No Info-Sliders found in Trash."
+#~ msgstr "Keine Info-Slider im Papierkorb gefunden."
+
+#~ msgctxt "post type general name"
+#~ msgid "Press media"
+#~ msgstr "Pressemedien"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Press media"
+#~ msgstr "Pressemedien"
+
+#~ msgctxt "admin menu"
+#~ msgid "Press media"
+#~ msgstr "Pressemedien"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Press media"
+#~ msgstr "Pressemedien"
+
+#~ msgctxt "press_media"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "Add New press media"
+#~ msgstr "Pressemedien hinzufügen"
+
+#~ msgid "New press media"
+#~ msgstr "Neue Pressemedien"
+
+#~ msgid "Edit press media"
+#~ msgstr "Pressemedien bearbeiten"
+
+#~ msgid "View press media"
+#~ msgstr "Pressemedien ansehen"
+
+#~ msgid "All press media"
+#~ msgstr "Alle Pressemedien"
+
+#~ msgid "Search press media"
+#~ msgstr "Pressemedien suchen"
+
+#~ msgid "Parent press media:"
+#~ msgstr "Übergeordnete Pressemedien:"
+
+#~ msgid "No press media found."
+#~ msgstr "Keine Pressemedien gefunden."
+
+#~ msgid "No press media found in Trash."
+#~ msgstr "Keine Pressemedien im Papierkorb gefunden."
+
+#~ msgctxt "post type general name"
+#~ msgid "Press releases"
+#~ msgstr "Pressemitteilungen"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Press release"
+#~ msgstr "Pressemitteilung"
+
+#~ msgctxt "admin menu"
+#~ msgid "Press releases"
+#~ msgstr "Presse"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Press release"
+#~ msgstr "Pressemitteilung"
+
+#~ msgctxt "press_release"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "Add New press release"
+#~ msgstr "Neue Pressemitteilung hinzufügen"
+
+#~ msgid "New press release"
+#~ msgstr "Neue Pressemitteilung"
+
+#~ msgid "Edit press release"
+#~ msgstr "Pressemitteilung bearbeiten"
+
+#~ msgid "View press release"
+#~ msgstr "Pressemitteilung ansehen"
+
+#~ msgid "All press releases"
+#~ msgstr "Alle Pressemitteilungen"
+
+#~ msgid "Search press releases"
+#~ msgstr "Pressemitteilungen suchen"
+
+#~ msgid "Parent press releases:"
+#~ msgstr "Übergeordnete Pressemitteilungen:"
+
+#~ msgid "No press releases found."
+#~ msgstr "Keine Pressemitteilungen gefunden."
+
+#~ msgid "No press releases found in Trash."
+#~ msgstr "Keine Pressemitteilungen im Papierkorb gefunden."
+
+#~ msgid "To top"
+#~ msgstr "Nach oben"
+
+#~ msgid "More information"
+#~ msgstr "Weitere informationen"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Mon"
+#~ msgstr "Mo"
+
+#~ msgid "Tue"
+#~ msgstr "Di"
+
+#~ msgid "Wed"
+#~ msgstr "Mi"
+
+#~ msgid "Thu"
+#~ msgstr "Do"
+
+#~ msgid "Fri"
+#~ msgstr "Fr"
+
+#~ msgid "Sat"
+#~ msgstr "Sa"
+
+#~ msgid "Sun"
+#~ msgstr "So"
+
+#~ msgid "General press information"
+#~ msgstr "Basis Pressemitteilungen"
+
+#~ msgid "Current press releases"
+#~ msgstr "Aktuelle Pressemitteilungen"
+
+#~ msgid "Event details"
+#~ msgstr "Veranstaltungs-Details"
+
+#~ msgid "Back to overview"
+#~ msgstr "Zurück zur Übersicht"
+
+#~ msgid "Previous event"
+#~ msgstr "Vorherige Veranstaltung"
+
+#~ msgid "Next event"
+#~ msgstr "Nächste Veranstaltung"
+
+#~ msgid "Back"
+#~ msgstr "Zurück"
+
+#~ msgid "Browse events"
+#~ msgstr "Veranstaltungen blättern"
+
+#~ msgid "Next"
+#~ msgstr "Nächste"
+
+#~ msgid "Footer menu"
+#~ msgstr "Footer-Menü"
+
+#~ msgid "Company data"
+#~ msgstr "Firmendaten"
+
+#~ msgid "Menus"
+#~ msgstr "Menüs"
+
+#~ msgid "Contact persons"
+#~ msgstr "Kontaktpersonen"
+
+#~ msgid "Contact person"
+#~ msgstr "Kontaktperson"
+
+#~ msgid "Add New contact person"
+#~ msgstr "Neue Kontaktperson hinzufügen"
+
+#~ msgid "New contact person"
+#~ msgstr "Neue Kontaktperson"
+
+#~ msgid "View contact person"
+#~ msgstr "Kontaktperson ansehen"
+
+#~ msgid "All contact persons"
+#~ msgstr "Alle Kontaktpersonen"
+
+#~ msgid "Search contact persons"
+#~ msgstr "Kontaktpersonen durchsuchen"
+
+#~ msgid "No contact persons found."
+#~ msgstr "Keine Kontaktpersonen gefunden."
+
+#~ msgid "No contact persons found in Trash."
+#~ msgstr "Keine Kontaktpersonen im Papierkorb gefunden."
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Categories"
+#~ msgstr "Kategorien"
+
+#~ msgid "Search Categories"
+#~ msgstr "Kategorien durchsuchen"
+
+#~ msgid "Popular Categories"
+#~ msgstr "Beliebte Kategorien"
+
+#~ msgid "All Categories"
+#~ msgstr "Alle Kategorien"
+
+#~ msgid "Update Category"
+#~ msgstr "Kategorie aktualisieren"
+
+#~ msgid "Add New Category"
+#~ msgstr "Neue Kategorie hinzufügen"
+
+#~ msgid "New Category Name"
+#~ msgstr "Neue Kategorie Name"
+
+#~ msgid "Separate categories with commas"
+#~ msgstr "Separieren Sie Kategorien mit Kommas"
+
+#~ msgid "Add or remove categories"
+#~ msgstr "Kategorien hinzufügen oder bearbeiten"
+
+#~ msgid "Choose from the most used categories"
+#~ msgstr "Wählen Sie aus den meistbenutzten Kategorien"
+
+#~ msgid "No categories found."
+#~ msgstr "Keine Kategorien gefunden."
+
+#~ msgid "Footer logo"
+#~ msgstr "Footer Logo"
+
+#~ msgid "Logo text"
+#~ msgstr "Logo Text"
+
+#~ msgid "Full time"
+#~ msgstr "Vollzeit"
+
+#~ msgid "Part time"
+#~ msgstr "Teilzeit"
+
+#~ msgid "Job offers"
+#~ msgstr "Stellenangebote"
+
+#~ msgid "Job offer"
+#~ msgstr "Stellenangebot"
+
+#~ msgid "New job offer"
+#~ msgstr "Neues Stellenangebot"
+
+#~ msgid "View job offer"
+#~ msgstr "Stellenangebot ansehen"
+
+#~ msgid "All job offers"
+#~ msgstr "Alle Stellenangebote"
+
+#~ msgid "Search job offers"
+#~ msgstr "Stellenangebote suchen"
+
+#~ msgid "Parent job offers:"
+#~ msgstr "Übergeordnete Stellenangebote:"
+
+#~ msgid "No job offers found."
+#~ msgstr "Keine Stellenangebote gefunden."
+
+#~ msgid "No job offers found in Trash."
+#~ msgstr "Keine Stellenangebote im Papierkorb gefunden."
+
+#, fuzzy
+#~| msgid "Documents"
+#~ msgid "Commands:"
+#~ msgstr "Dokumente"
+
+#~ msgid "Career"
+#~ msgstr "Karriere"
+
+#~ msgid "Cookie layer"
+#~ msgstr "Cookie-Layer"
+
+#~ msgctxt "admin menu"
+#~ msgid "Contact persons"
+#~ msgstr "Kontaktpersonen"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Contact person"
+#~ msgstr "Kontaktperson"
+
+#~ msgctxt "admin menu"
+#~ msgid "Job offers"
+#~ msgstr "Stellenangebote"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Job offer"
+#~ msgstr "Stellenangebot"
+
+#~ msgctxt "job offer"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "Directions"
+#~ msgstr "Anfahrtsbeschreibung"
+
+#~ msgid "Do you require personal consultation?"
+#~ msgstr "Sie benötigen persönliche Beratung?"
+
+#~ msgid "Main navigation"
+#~ msgstr "Hauptnavigation"
+
+#~ msgctxt "post type general name"
+#~ msgid "Content sliders"
+#~ msgstr "Content-Slider"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Content slider"
+#~ msgstr "Content-Slider"
+
+#~ msgctxt "admin menu"
+#~ msgid "Content sliders"
+#~ msgstr "Content-Slider"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Content slider"
+#~ msgstr "Content-Slider"
+
+#~ msgid "Add New content slider"
+#~ msgstr "Neuen Content-Slider hinzufügen"
+
+#~ msgid "New content slider"
+#~ msgstr "Neuer Content-Slider"
+
+#~ msgid "Edit content slider"
+#~ msgstr "Content-Slider bearbeiten"
+
+#~ msgid "View content slider"
+#~ msgstr "Content-Slider ansehen"
+
+#~ msgid "All content sliders"
+#~ msgstr "Alle Content-Slider"
+
+#~ msgid "Search content sliders"
+#~ msgstr "Content-Slider durchsuchen"
+
+#~ msgid "Parent content sliders:"
+#~ msgstr "Übergeordnete Content-Slider:"
+
+#~ msgid "No content sliders found."
+#~ msgstr "Keine Content-Slider gefunden."
+
+#~ msgid "No content sliders found in Trash."
+#~ msgstr "Keine Content-Slider im Papierkorb gefunden."
+
+#~ msgid "First name*"
+#~ msgstr "Vorname*"
+
+#~ msgid "Street / No.*"
+#~ msgstr "Straße/Nr.*"
+
+#~ msgid "Postal code*"
+#~ msgstr "PLZ*"
+
+#~ msgid "City*"
+#~ msgstr "Ort*"
+
+#~ msgid "Country*"
+#~ msgstr "Land*"
+
+#~ msgid "Phone"
+#~ msgstr "Telefon"
+
+#~ msgid "Fax"
+#~ msgstr "Fax"
+
+#~ msgid "Yes, I have noted the data privacy statement and agree to my data being electronically collected and saved. My data solely serves the purpose for my enquiry to be processed and replied to. By sending the contact form I concur with its processing. Pointer: you can countermand your consent at any future time by sending an email to <a href=\"mailto:widerruf@hwr.de\">widerruf@hwr.de</a>."
+#~ msgstr "Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen und bin damit einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und gespeichert werden. Meine Daten werden dabei nur streng zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage benutzt. Mit dem Absenden der Registrie- rung erkläre ich mich mit der Verarbeitung einverstanden. Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an <a href=\"mailto:widerruf@hwr.de\">widerruf@hwr.de</a>. widerrufen."
+
+#~ msgid "<strong>ERROR</strong>: Please enter your company."
+#~ msgstr "<strong>FEHLER</strong>: Bitte geben Sie Ihre Firma ein."
+
+#~ msgid "<strong>ERROR</strong>: Please enter your first name."
+#~ msgstr "<strong>FEHLER</strong>: Bitte geben Sie Ihren Vornamen ein."
+
+#~ msgid "<strong>ERROR</strong>: Please enter your last name."
+#~ msgstr "<strong>FEHLER</strong>: Bitte geben Sie Ihren Nachnamen ein."
+
+#~ msgid "<strong>ERROR</strong>: Please enter your street."
+#~ msgstr "<strong>FEHLER</strong>: Bitte geben Sie Ihre Straße ein."
+
+#~ msgid "<strong>ERROR</strong>: Please enter your postal code."
+#~ msgstr "<strong>FEHLER</strong>: Bitte geben Sie Postleitzahl ein."
+
+#~ msgid "<strong>ERROR</strong>: Please enter your city."
+#~ msgstr "<strong>FEHLER</strong>: Bitte geben Sie Ihren Ort ein."
+
+#~ msgid "<strong>ERROR</strong>: Please enter your country."
+#~ msgstr "<strong>FEHLER</strong>: Bitte geben Sie Ihr Land ein."
+
+#~ msgid "<strong>ERROR</strong>: Please accept our privacy policy."
+#~ msgstr "<strong>FEHLER</strong>: Bitte akzeptieren Sie unsere Datenschutzerklärung."
+
+#~ msgid "Company"
+#~ msgstr "Firma"
+
+#~ msgid "Street"
+#~ msgstr "Straße/Nr."
+
+#~ msgid "Postal code"
+#~ msgstr "PLZ"
+
+#~ msgid "City"
+#~ msgstr "Ort"
+
+#~ msgid "Country"
+#~ msgstr "Land"
+
+#~ msgctxt "post type general name"
+#~ msgid "Downloads"
+#~ msgstr "Alle Downloads"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Download"
+#~ msgstr "Download"
+
+#~ msgctxt "admin menu"
+#~ msgid "Downloads"
+#~ msgstr "Downloads"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Product"
+#~ msgstr "Produkt"
+
+#~ msgid "Add New download"
+#~ msgstr "Neuen Download hinzufügen"
+
+#~ msgid "New download"
+#~ msgstr "Neuer Download"
+
+#~ msgid "Edit download"
+#~ msgstr "Download bearbeiten"
+
+#~ msgid "View download"
+#~ msgstr "Download ansehen"
+
+#~ msgid "All downloads"
+#~ msgstr "Alle Downloads"
+
+#~ msgid "Search downloads"
+#~ msgstr "Downloads suchen"
+
+#~ msgid "Parent downloads:"
+#~ msgstr "Übergeordnete Downloads:"
+
+#~ msgid "No downloads found."
+#~ msgstr "Keine Downloads gefunden."
+
+#~ msgid "No downloads found in Trash."
+#~ msgstr "Keine Downloads im Papierkorb gefunden."
+
+#~ msgctxt "post type general name"
+#~ msgid "Fairs"
+#~ msgstr "Messetermine"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Fair"
+#~ msgstr "Messetermin"
+
+#~ msgctxt "admin menu"
+#~ msgid "Fairs"
+#~ msgstr "Messetermine"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Fair"
+#~ msgstr "Messetermin"
+
+#, fuzzy
+#~| msgid "Google Analytics Settings"
+#~ msgid "General settings"
+#~ msgstr "Google Analytics Einstellungen"
+
+#~ msgid "Product finder"
+#~ msgstr "Produktsuche"
+
+#~ msgctxt "post type general name"
+#~ msgid "Partners"
+#~ msgstr "Partner"
+
+#~ msgctxt "admin menu"
+#~ msgid "Partners"
+#~ msgstr "Partner"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Partner"
+#~ msgstr "Partner"
+
+#~ msgid "New partner"
+#~ msgstr "Neuer Partner"
+
+#~ msgid "Edit partner"
+#~ msgstr "Partner aktualisieren"
+
+#~ msgid "Clamping Jaws Finder"
+#~ msgstr "Spannbacken-Finder"
+
+#~ msgid "Choose company"
+#~ msgstr "Hersteller wählen"
+
+#~ msgid "Product"
+#~ msgstr "Produkt"
+
+#~ msgid "Choose product"
+#~ msgstr "Produkt wählen"
+
+#~ msgid "Diameter"
+#~ msgstr "Durchmesser"
+
+#~ msgid "Choose diameter"
+#~ msgstr "Durchmesser wählen"
+
+#~ msgid "Download datasheet"
+#~ msgstr "Datenblatt herunterladen"
+
+#~ msgctxt "post type general name"
+#~ msgid "Products"
+#~ msgstr "Produkte"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Product"
+#~ msgstr "Produkt"
+
+#~ msgctxt "admin menu"
+#~ msgid "Products"
+#~ msgstr "Produkte"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Product lines"
+#~ msgstr "Produktlinien"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Product line"
+#~ msgstr "Produktlinie"
+
+#~ msgid "Search product lines"
+#~ msgstr "Produktlinien durchsuchen"
+
+#~ msgid "Popular product lines"
+#~ msgstr "Beliebte Produktlinien"
+
+#~ msgid "All product lines"
+#~ msgstr "Alle Produktlinien"
+
+#~ msgid "Edit product line"
+#~ msgstr "Produktlinie bearbeiten"
+
+#~ msgid "Update product line"
+#~ msgstr "Produktlinie aktualisieren"
+
+#~ msgid "New product line Name"
+#~ msgstr "Neue Produktlinie Name"
+
+#~ msgid "Separate product lines with commas"
+#~ msgstr "Separieren Sie Produktlinien mit Kommas"
+
+#~ msgid "Add or remove product lines"
+#~ msgstr "Produktlinien hinzufügen oder bearbeiten"
+
+#~ msgid "Choose from the most used product lines"
+#~ msgstr "Wählen Sie aus den meistbenutzten Produktlinien"
+
+#~ msgid "No product lines found."
+#~ msgstr "Keine Produktlinien gefunden."
+
+#~ msgid "Product lines"
+#~ msgstr "Produktlinien"
+
+#~ msgctxt "post type general name"
+#~ msgid "Success stories"
+#~ msgstr "Erfolgsberichte"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Success story"
+#~ msgstr "Erfolgsbericht"
+
+#~ msgctxt "admin menu"
+#~ msgid "Success stories"
+#~ msgstr "Erfolgsberichte"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Success story"
+#~ msgstr "Erfolgsbericht"
+
+#~ msgid "Add New success story"
+#~ msgstr "Neuen Erfolgsbericht hinzufügen"
+
+#~ msgid "New success story"
+#~ msgstr "Neuer Erfolgsbericht"
+
+#~ msgid "Edit success story"
+#~ msgstr "Erfolgsbericht bearbeiten"
+
+#~ msgid "View success story"
+#~ msgstr "Erfolgsbericht ansehen"
+
+#~ msgid "All success storys"
+#~ msgstr "Alle Erfolgsberichte"
+
+#~ msgid "Search success storys"
+#~ msgstr "Erfolgsberichte durchsuchen"
+
+#~ msgid "Parent success storys:"
+#~ msgstr "Übergeordnete Erfolgsberichte:"
+
+#~ msgid "No success storys found."
+#~ msgstr "Keine Erfolgsberichte gefunden."
+
+#~ msgid "No success storys found in Trash."
+#~ msgstr "Keine Erfolgsberichte im Papierkorb gefunden."
+
+#~ msgid "Button"
+#~ msgstr "Button"
+
+#~ msgid "Text small"
+#~ msgstr "Text klein"
+
+#~ msgid "Download section"
+#~ msgstr "Downloadbereich"
+
+#~ msgid "Our 3D models, data sheets, operating instructions and other technical documents are in the Download section. You need to register with us before you can access our Download section. If you have already registered with us, then please enter your email address below together with the password used when registering. Failing this, you can re-register here!"
+#~ msgstr "Im Downloadbereich finden sie unsere 3D-Modelle, Datenblätter, Bedienungsanleitungen und weitere technische Unterlagen. Um in unseren Downloadbereich zu gelangen, müssen Sie sich zuvor bei uns registriert haben. Sollten Sie bei uns schon registriert sein, dann geben Sie nachfolgend bitte Ihre E-Mail-Adresse und Ihr Kennwort, das Sie bei der Registrierung angegeben haben, ein. Andernfalls können Sie sich hier jetzt neu registrieren!"
+
+#~ msgid "Log-in"
+#~ msgstr "Anmelden"
+
+#~ msgid "You are logged in as"
+#~ msgstr "Sie sind angemeldet als"
+
+#~ msgid "Edit profile"
+#~ msgstr "Profil bearbeiten"
+
+#~ msgid "Sign out"
+#~ msgstr "Abmelden"
+
+#~ msgid "Town, Country"
+#~ msgstr "Stadt, Land"
+
+#~ msgid "Trade partner"
+#~ msgstr "Handelspartner"
+
+#~ msgid "Address"
+#~ msgstr "Adresse"
+
+#~ msgid "Contact"
+#~ msgstr "Kontakt"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Exhibition / hall & stand"
+#~ msgstr "Messe / Halle & Stand"
+
+#~ msgid "Exhibitor"
+#~ msgstr "Aussteller"
+
+#~ msgid "There are no upcoming exhibitions."
+#~ msgstr "Zurzeit sind keine Messeauftritte geplant."
+
+#~ msgid "There are no vacancies available at the moment."
+#~ msgstr "Zur Zeit gibt es leider keine offenen Stellen."
+
+#~ msgid "Page Not Found"
+#~ msgstr "Page Not Found"
+
+#, fuzzy
+#~| msgid "Search headers"
+#~ msgid "Show search in header"
+#~ msgstr "Header suchen"
+
+#~ msgid "%1$s at %2$s"
+#~ msgstr "%1$s am %2$s"
+
+#~ msgid "Edit"
+#~ msgstr "Bearbeiten"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Dein Kommentar wartet auf Freischaltung."
+
+#, fuzzy
+#~| msgid "Search results for &bdquo;%s&ldquo;"
+#~ msgctxt "comments title"
+#~ msgid "One reply on &ldquo;%s&rdquo;"
+#~ msgstr "Suchergebnisse für &bdquo;%s&ldquo;"
+
+#, fuzzy
+#~| msgid "No comments"
+#~ msgid "Newer Comments"
+#~ msgstr "Keine Kommentare"
+
+#, fuzzy
+#~| msgid "More posts"
+#~ msgid "Older Comments"
+#~ msgstr "weitere Beiträge"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Kommentare sind geschlossen."
+
+#, fuzzy
+#~| msgid "Footer Menu"
+#~ msgid "Mobile Menu"
+#~ msgstr "Footer-Menü"
+
+#~ msgid "Footer Menu"
+#~ msgstr "Footer-Menü"
+
+#, fuzzy
+#~| msgid "Social Links Menu"
+#~ msgid "Social Menu"
+#~ msgstr "Social-Links Menü"
+
+#, fuzzy
+#~| msgid "Footer %d"
+#~ msgid "Footer #1"
+#~ msgstr "Footer %d"
+
+#, fuzzy
+#~| msgid "Footer %d"
+#~ msgid "Footer #2"
+#~ msgstr "Footer %d"
+
+#, fuzzy
+#~| msgid "Logo (white background)"
+#~ msgid "Subtle Background"
+#~ msgstr "Logo (weißer Hintergrund)"
+
+#~ msgid "Search"
+#~ msgstr "Suchen"
+
+#, fuzzy
+#~| msgid "Site options"
+#~ msgid "Theatre of Operations"
+#~ msgstr "Seiten-Optionen"
+
+#~ msgid "Social Links Menu"
+#~ msgstr "Social-Links Menü"
+
+#, fuzzy
+#~| msgid "Postal code"
+#~ msgid "Post date"
+#~ msgstr "PLZ"
+
+#, fuzzy
+#~| msgid "Tags:"
+#~ msgid "Tags"
+#~ msgstr "Schlagworte:"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search:"
+#~ msgstr "Suchen"
+
+#, fuzzy
+#~| msgid "Search fairs"
+#~ msgid "search again"
+#~ msgstr "Messetermine suchen"
+
+#, fuzzy
+#~| msgid "Search fairs"
+#~ msgid "Search for:"
+#~ msgstr "Messetermine suchen"
+
+#, fuzzy
+#~| msgid "Search headers"
+#~ msgid "Search &hellip;"
+#~ msgstr "Header suchen"
+
+#, fuzzy
+#~| msgid "Page %s"
+#~ msgid "Pages:"
+#~ msgstr "Seite %s"
+
+#~ msgid "Continue reading"
+#~ msgstr "Weiterlesen"
+
+#~ msgid "Products"
+#~ msgstr "Produkte"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Product categories"
+#~ msgstr "Produktkategorien"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Product category"
+#~ msgstr "Produktkategorie"
+
+#~ msgid "Search product categories"
+#~ msgstr "Produktkategorien durchsuchen"
+
+#~ msgid "Popular product categories"
+#~ msgstr "Beliebte Produktkategorien"
+
+#~ msgid "All product categories"
+#~ msgstr "Alle Produktkategorien"
+
+#~ msgid "Edit product category"
+#~ msgstr "Produktkategorie aktualisieren"
+
+#~ msgid "Add new product category"
+#~ msgstr "Produktkategorien hinzufügen oder bearbeiten"
+
+#~ msgid "Separate product categories with commas"
+#~ msgstr "Separieren Sie Produktkategorien mit Kommas"
+
+#~ msgid "Add or remove product categories"
+#~ msgstr "Produktkategorien hinzufügen oder bearbeiten"
+
+#~ msgid "Choose from the most used product categories"
+#~ msgstr "Wählen Sie aus den meistbenutzten Produktkategorien"
+
+#~ msgid "No product categories found."
+#~ msgstr "Keine Produktkategorien gefunden."
+
+#~ msgid "Product categories"
+#~ msgstr "Beliebte Produktkategorien"
+
+#~ msgid "Design and content"
+#~ msgstr "Design und Inhalte"
+
+#~ msgid "Technical implementation"
+#~ msgstr "Technische Umsetzung"
+
+#~ msgid "Social Media"
+#~ msgstr "Social Media"
+
+#~ msgid "Dynamic Pages"
+#~ msgstr "Dynamische Seiten"
+
+#~ msgid "Apprenticeships"
+#~ msgstr "Ausbildungsplätze"
+
+#~ msgid "Newsletter"
+#~ msgstr "Newsletter"
+
+#~ msgid "404 Page"
+#~ msgstr "404 Seite"
+
+#~ msgid "Certificate portal"
+#~ msgstr "Zeugnisportal"
+
+#~ msgctxt "post type general name"
+#~ msgid "Apprenticeships"
+#~ msgstr "Ausbildungsberufe"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Apprenticeship"
+#~ msgstr "Ausbildungsberuf"
+
+#~ msgctxt "admin menu"
+#~ msgid "Apprenticeships"
+#~ msgstr "Ausbildung"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Apprenticeship"
+#~ msgstr "Ausbildungsberuf"
+
+#~ msgctxt "Apprenticeship"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "Add New apprenticeship"
+#~ msgstr "Neuen Ausbildungsberuf hinzufügen"
+
+#~ msgid "New apprenticeship"
+#~ msgstr "Neuer Ausbildungsberuf"
+
+#~ msgid "Edit apprenticeship"
+#~ msgstr "Ausbildungsberuf bearbeiten"
+
+#~ msgid "View apprenticeship"
+#~ msgstr "Ausbildungsberuf ansehen"
+
+#~ msgid "All apprenticeships"
+#~ msgstr "Alle Ausbildungsberufe"
+
+#~ msgid "Search apprenticeships"
+#~ msgstr "Ausbildungsberufe durchsuchen"
+
+#~ msgid "Parent apprenticeships:"
+#~ msgstr "Übergeordnete Ausbildungsberufe"
+
+#~ msgid "No apprenticeships found."
+#~ msgstr "Keine Ausbildungsberufe gefunden."
+
+#~ msgid "No apprenticeships found in Trash."
+#~ msgstr "Keine Ausbildungsberufe im Papierkorb gefunden."
+
+#~ msgctxt "post type general name"
+#~ msgid "Badges"
+#~ msgstr "Störer"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Badge"
+#~ msgstr "Störer"
+
+#~ msgctxt "admin menu"
+#~ msgid "Badges"
+#~ msgstr "Störer"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Badge"
+#~ msgstr "Störer"
+
+#~ msgctxt "badge"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgctxt "content-slider"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgctxt "download"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgctxt "post type general name"
+#~ msgid "Job Offers"
+#~ msgstr "Stellenangebote"
+
+#~ msgctxt "admin menu"
+#~ msgid "Job Offers"
+#~ msgstr "Stellenangebote"
+
+#~ msgctxt "Job Offer"
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "All Job Offers"
+#~ msgstr "Alle Stellenangebote"
+
+#~ msgid "Update contact person"
+#~ msgstr "Kontaktperson aktualisieren"
+
+#~ msgid "New contact person Name"
+#~ msgstr "Neue Kontaktperson Name"
+
+#~ msgid "Separate contact persons with commas"
+#~ msgstr "Separieren Sie Kontaktpersonen mit Kommas"
+
+#~ msgid "Add or remove contact persons"
+#~ msgstr "Kontaktpersonen hinzufügen oder bearbeiten"
+
+#~ msgid "Choose from the most used contact persons"
+#~ msgstr "Wählen Sie aus den meistbenutzten Kontaktpersonen"
+
+#~ msgid "Location"
+#~ msgstr "Standort"
+
+#~ msgctxt "post type general name"
+#~ msgid "Locations"
+#~ msgstr "Standorte"
+
+#~ msgctxt "post type singular name"
+#~ msgid "Location"
+#~ msgstr "Standort"
+
+#~ msgctxt "admin menu"
+#~ msgid "Locations"
+#~ msgstr "Standorte"
+
+#~ msgctxt "add new on admin bar"
+#~ msgid "Location"
+#~ msgstr "Standort"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Countries"
+#~ msgstr "Länder"
+
+#~ msgid "Search countries"
+#~ msgstr "Länder durchsuchen"
+
+#~ msgid "All countries"
+#~ msgstr "Alle Länder"
+
+#~ msgid "Add New overlay"
+#~ msgstr "Neues Overlay hinzufügen"
+
+#~ msgid "New overlay"
+#~ msgstr "Neues Overlay"
+
+#~ msgid "Edit overlay"
+#~ msgstr "Overlay bearbeiten"
+
+#~ msgid "View overlay"
+#~ msgstr "Overlay ansehen"
+
+#~ msgid "All overlays"
+#~ msgstr "Alle Overlays"
+
+#~ msgid "Search overlays"
+#~ msgstr "Overlays suchen"
+
+#~ msgid "No overlays found."
+#~ msgstr "Keine Overlays gefunden."
+
+#~ msgid "KG/m Calculator"
+#~ msgstr "KG/m-Rechner"
+
+#~ msgid "C Steel"
+#~ msgstr "C-Stahl"
+
+#~ msgid "Alloy"
+#~ msgstr "Legierung"
+
+#~ msgid "Stainless steel"
+#~ msgstr "Edelstahl"
+
+#~ msgid "Wall"
+#~ msgstr "Wand"
+
+#~ msgid "Result"
+#~ msgstr "Ergebnis"
+
+#~ msgid "kg/m theoretical weight"
+#~ msgstr "kg/m theoretisches Gewicht"
+
+#~ msgid "all apprenticeships"
+#~ msgstr "Alle Ausbildungsplätze"
+
+#~ msgid "all news"
+#~ msgstr "alle News"
+
+#, fuzzy
+#~| msgid "Previous "
+#~ msgid "Previous"
+#~ msgstr "Vorherige"
+
+#~ msgid "Page"
+#~ msgstr "Seite"
+
+#, fuzzy
+#~| msgid "Yearly Archives: %s"
+#~ msgid "Category Archives: "
+#~ msgstr "Jahr: %s"
+
+#, fuzzy
+#~| msgid "Daily Archives: %s"
+#~ msgid "Tag Archives: "
+#~ msgstr "Tag: %s"
+
+#, fuzzy
+#~| msgid "Monthly Archives: %s"
+#~ msgid "Author Archives: "
+#~ msgstr "Monat: %s"
+
+#, fuzzy
+#~| msgid "Yearly Archives: %s"
+#~ msgid "Yearly Archives: "
+#~ msgstr "Jahr: %s"
+
+#, fuzzy
+#~| msgid "Monthly Archives: %s"
+#~ msgid "Monthly Archives: "
+#~ msgstr "Monat: %s"
+
+#, fuzzy
+#~| msgid "Daily Archives: %s"
+#~ msgid "Daily Archives: "
+#~ msgstr "Tag: %s"
+
+#, fuzzy
+#~| msgid "Monthly Archives: %s"
+#~ msgid "Post Type Archives: "
+#~ msgstr "Monat: %s"
+
+#, fuzzy
+#~| msgid "Daily Archives: %s"
+#~ msgid "Archives:"
+#~ msgstr "Tag: %s"
+
+#, fuzzy
+#~| msgid "More posts"
+#~ msgid "Newer posts"
+#~ msgstr "weitere Beiträge"
+
+#, fuzzy
+#~| msgid "Search results for "
+#~ msgid "Search results for:"
+#~ msgstr "Suchergebnisse für"
+
+#, fuzzy
+#~| msgid "Next"
+#~ msgid "Next Post"
+#~ msgstr "Nächste"
+
+#, fuzzy
+#~| msgid "More posts"
+#~ msgid "Next post:"
+#~ msgstr "weitere Beiträge"
+
+#, fuzzy
+#~| msgid "Previous "
+#~ msgid "Previous post:"
+#~ msgstr "Vorherige"
+
+#~ msgctxt "post"
+#~ msgid "Featured"
+#~ msgstr "Featured"
+
+#, fuzzy
+#~| msgid "More posts"
+#~ msgid "View more posts"
+#~ msgstr "weitere Beiträge"
+
+#~ msgid "to news overview"
+#~ msgstr "zur News-Übersicht"
+
+#~ msgid "Author: %s"
+#~ msgstr "Autor: %s"
+
+#~ msgid "One response"
+#~ msgstr "Ein Kommentar"
+
+#~ msgid "Discussion"
+#~ msgstr "Diskussion"
+
+#~ msgid "We love accounting"
+#~ msgstr "Wir lieben Buchhaltung"
+
+#~ msgid "Continue reading %s"
+#~ msgstr "%s weiterlesen"
+
+#~ msgid "API Resources"
+#~ msgstr "API Ressourcen"
+
+#~ msgid "Glossary Main Menu"
+#~ msgstr "Lexikon Hauptmenü"
+
+#, fuzzy
+#~| msgid "Magazine Settings"
+#~ msgid "Mailjet Settings"
+#~ msgstr "Magazin Einstellungen"
+
+#, fuzzy
+#~| msgid "E-Mail"
+#~ msgid "Mailjet"
+#~ msgstr "E-Mail"
+
+#~ msgid "Social Settings (%s)"
+#~ msgstr "Social Settings (%s)"
+
+#~ msgid "Glossary Settings"
+#~ msgstr "Lexikon-Einstellungen"
+
+#~ msgid "Glossary"
+#~ msgstr "Lexikon"
+
+#~ msgid "Magazine Settings"
+#~ msgstr "Magazin Einstellungen"
+
+#~ msgid "Magazine"
+#~ msgstr "Magazin"
+
+#~ msgid "Magazine Settings (%s)"
+#~ msgstr "Magazin Einstellungen (%s)"
+
+#~ msgid "Magazine (%s)"
+#~ msgstr "Magazin (%s)"
+
+#~ msgid "Pricing Table (%s)"
+#~ msgstr "Preistabelle (%s)"
+
+#~ msgid "Pricing (%s)"
+#~ msgstr "Preise (%s)"
+
+#, fuzzy
+#~| msgid "Flag (%s)"
+#~ msgid "FAQ (%s)"
+#~ msgstr "Flag (%s)"
+
+#~ msgid "Flag (%s)"
+#~ msgstr "Flag (%s)"
+
+#, fuzzy
+#~| msgid "Flag (%s)"
+#~ msgid "404 page (%s)"
+#~ msgstr "Flag (%s)"
+
+#~ msgid "Search ..."
+#~ msgstr "Suchen ..."
+
+#~ msgid "Tag: %s"
+#~ msgstr "Schlagwort: %s"
+
+#~ msgid "Folder"
+#~ msgstr "Ordner"
+
+#~ msgid "Add New Add-On"
+#~ msgstr "Neues Add-On hinzufügen"
+
+#~ msgid "New Add-On"
+#~ msgstr "Neues Add-On"
+
+#~ msgid "Edit Add-On"
+#~ msgstr "Add-On bearbeiten"
+
+#~ msgid "View Add-On"
+#~ msgstr "Add-On ansehen"
+
+#~ msgid "All Add-Ons"
+#~ msgstr "Alle Add-Ons"
+
+#~ msgid "Search Add-Ons"
+#~ msgstr "Add-Ons suchen"
+
+#~ msgid "New Glossary Entry"
+#~ msgstr "Neuer Begriff"
+
+#~ msgid "View Glossary Entry"
+#~ msgstr "Begriff ansehen"
+
+#~ msgid "No Glossary Entries found."
+#~ msgstr "Keine Lexikon-Begriffe gefunden."
+
+#~ msgid "Please fill in"
+#~ msgstr "Bitte ausfüllen"
+
+#~ msgid "No Translation-Sets found."
+#~ msgstr "Keine Translation-Sets gefunden."
+
+#~ msgid "No Translation-Sets found in Trash."
+#~ msgstr "Keine Translation-Sets im Papierkorb gefunden."
+
+#~ msgid "Search Signups"
+#~ msgstr "Signups suchen"
+
+#~ msgid "Popular Signups"
+#~ msgstr "Beliebte Signups"
+
+#~ msgid "All Signups"
+#~ msgstr "Alle Signups"
+
+#~ msgid "New Signup Name"
+#~ msgstr "Neuer Signup Name"
+
+#~ msgid "Separate signups with commas"
+#~ msgstr "Signups per Komma trennen"
+
+#~ msgid "Add or remove signups"
+#~ msgstr "Signups hinzufügen oder entfernen"
+
+#~ msgid "Choose from the most used signups"
+#~ msgstr "Wähle aus dem meist verwendeten Signups"
+
+#~ msgid "Button green"
+#~ msgstr "Button grün"
+
+#~ msgid "reply"
+#~ msgstr "antworten"
+
+#~ msgid "Resources"
+#~ msgstr "Ressourcen"
+
+#~ msgid "Top Terms"
+#~ msgstr "Top-Suchbegriffe"
+
+#~ msgid "Search glossary"
+#~ msgstr "Lexikon durchsuchen"
+
+#~ msgid "Advertisement"
+#~ msgstr "Anzeige"
+
+#~ msgid "Email"
+#~ msgstr "E-Mail"
+
+#~ msgid "Try now free of charge!"
+#~ msgstr "Jetzt kostenlos testen!"
+
+#~ msgid "Free trial"
+#~ msgstr "Gratis testen"
+
+#~ msgid "Plan"
+#~ msgstr "Tarif"
+
+#~ msgid "E-Mail"
+#~ msgstr "E-Mail"
+
+#~ msgid "Do not take a risk, test now free of charge"
+#~ msgstr "Kein Risiko eingehen und jetzt kostenlos testen"
+
+#~ msgid "Now, let's start"
+#~ msgstr "Jetzt loslegen"
+
+#~ msgid "top"
+#~ msgstr "oben"
+
+#~ msgid "Test for free"
+#~ msgstr "Gratis testen"
+
+#~ msgid "Related entries"
+#~ msgstr "Ähnliche Beiträge"
+
+#~ msgid "No glossary entries for letter %s"
+#~ msgstr "Es gibt keine Lexikon-Begriffe für %s"
+
+#~ msgid "Answers for category %s"
+#~ msgstr "Antworten für Kategorie %s"
+
+#~ msgid "Title"
+#~ msgstr "Titel"
+
+#~ msgid "Billomat uses cookies to ensure that we give you the best experience on our website."
+#~ msgstr "Billomat nutzt Cookies, damit wir unsere Website für dich stetig verbessern können."
+
+#~ msgid "Billomat Glossary"
+#~ msgstr "Billomat Lexikon"
+
+#~ msgid "Subscribe to Newsletter"
+#~ msgstr "Newsletter bestellen"
+
+#~ msgid "Share:"
+#~ msgstr "Teilen:"
+
+#~ msgid "Home"
+#~ msgstr "Startseite"
+
+#~ msgid "Previous page"
+#~ msgstr "Vorherige Seite"
+
+#~ msgid "monthly"
+#~ msgstr "monatlich"
+
+#~ msgid "yearly"
+#~ msgstr "jährlich"
+
+#~ msgid "every 24 months"
+#~ msgstr "alle 24 Monate"
+
+#~ msgid "Try for free"
+#~ msgstr "Kostenlos testen"
+
+#~ msgid "Subscribe for free"
+#~ msgstr "Gratis eintragen"
+
+#~ msgid "<i class=\"icon arrow-left\"></i> &nbsp; Previous article"
+#~ msgstr "<i class=\"icon arrow-left\"></i> &nbsp; Artikel davor"
+
+#~ msgid "Next article &nbsp; <i class=\"icon arrow-right\"></i>"
+#~ msgstr "Artikel danach &nbsp; <i class=\"icon arrow-right\"></i>"
+
+#~ msgid "known from"
+#~ msgstr "bekannt aus"
+
+#~ msgid "Call for free"
+#~ msgstr "Kostenlos anrufen"
+
+#~ msgid "+49 800 - 24 55 66 28"
+#~ msgstr "0800 - 24 55 66 28"

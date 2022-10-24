@@ -35,6 +35,33 @@ body .slider__button {
   }
 }
 
+.slider__nav-buttons--centered .slider__button {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  margin-top: -20px;
+  border: none;
+
+  &:after {
+    font-size: 20px;
+    color: $color-main;
+  }
+
+  &:hover:after {
+    color: #000;
+  }
+}
+
+.slider__nav-buttons--centered .slider__button--prev {
+  left: -70px;
+  animation: bounce-prev 1s infinite;
+}
+
+.slider__nav-buttons--centered .slider__button--next {
+  right: -70px;
+  animation: bounce-next 1s infinite;
+}
+
 .slider__nav-buttons--white .slider__button {
   border-color: #fff;
 
@@ -48,7 +75,27 @@ body .slider__button--prev:after {
   padding-right: 1px;
 }
 
+body .slider__nav-buttons--centered .slider__button--prev:after {
+  content: "\e904";
+}
+
 body .slider__button--next:after {
   content: "\e901";
   padding-left: 1px;
+}
+
+body .slider__nav-buttons--centered .slider__button--next:after {
+  content: "\e905";
+}
+
+@keyframes bounce-prev {
+  0%     { transform: translateX(0); }
+  50%    { transform: translateX(-5px); }
+  100%   { transform: translateX(0); }
+}
+
+@keyframes bounce-next {
+  0%     { transform: translateX(0); }
+  50%    { transform: translateX(5px); }
+  100%   { transform: translateX(0); }
 }
