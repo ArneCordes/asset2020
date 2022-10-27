@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import Swiper, { Navigation, Thumbs, EffectFade } from 'swiper';
+import Swiper, { Navigation, Thumbs, EffectFade, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
@@ -18,10 +18,14 @@ $(function() {
     }
 
     var swiper = new Swiper($swiperEl.get(0), {
-      modules: [Navigation, Thumbs, EffectFade],
+      modules: [Navigation, Thumbs, EffectFade, Autoplay],
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
       speed: 1000,
       effect: 'fade',
       thumbs: {
