@@ -150,7 +150,7 @@
             Das Unternehmen und<br>
             <span class="color-main">die Menschen dahinter</span>
           </h2>
-          <div class="text-image__text">
+          <div class="text-image__text text">
             <p>
               Die ASSET Firmengruppe wurde 1998 in Bremen gegründet. Seit dem haben wir uns mit solide geplanten Immobilienprojekten einen guten Namen gemacht . Unsere Bandbreite reichte von hochwertigen Wohnimmobilien, Verbraucher-märkten und Einkaufszentren bis hin zur Sanierung von historischen Baudenkmälern. 2016 wurde unser Unternehmen gemäß DIN ISO 9001:2015 zertifiziert. ASSET bedeutet »Vermögenswert«. Die Schaffung und Betreuung Ihrer Vermögenswerte ist uns eine Verpflichtung.
             </p>

@@ -1,0 +1,11 @@
+.text {
+  p {
+    &:not(:last-child) {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  a:hover {
+    color: $color-main;
+  }
+}

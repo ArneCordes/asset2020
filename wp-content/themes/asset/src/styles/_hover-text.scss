@@ -42,3 +42,19 @@
   max-width: 3px;
   padding: 0;
 }
+
+.hover-text--fade {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.hover-text--fade .hover-text__overlay {
+  opacity: 0;
+  max-width: none !important;
+  height: 100% !important;
+  left: auto;
+}
+
+.hover-text--fade:hover .hover-text__overlay {
+  opacity: 1;
+}

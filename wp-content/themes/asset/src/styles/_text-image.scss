@@ -2,6 +2,23 @@
   display: flex;
 }
 
+.text-image__roof {
+  @extend .section__title;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.text-image__roof--outside {
+  position: relative;
+  top: -150px;
+  margin-bottom: 0;
+}
+
+.text-image__roof-text {
+  @extend .section__title-text;
+  margin-left: 100px;
+}
+
 .text-image--bg-darkgray {
   background-color: $color-darkgray;
 }
@@ -34,4 +51,8 @@
 
 .text-image--image-offset .text-image__media {
   margin-top: -140px;
+}
+
+.text-image--image-offset-lg .text-image__media {
+  margin-top: -200px;
 }

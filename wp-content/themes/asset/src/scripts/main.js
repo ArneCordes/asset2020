@@ -19,6 +19,5 @@
     $('[data-css-animate]').each(function() {
       $(this).cssAnimate();
     });
-
   });
 })(jQuery);

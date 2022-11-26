@@ -7,14 +7,24 @@
   @extend %font-blair;
   font-weight: bold;
   font-size: 1.25rem;
+  line-height: 1.7;
   text-transform: uppercase;
   margin-bottom: 60px;
   color: $color-darkgray;
 }
 
+.contact__headline--alt {
+  color: $color-main;
+  margin-bottom: 20px;
+}
+
 .contact__text {
   max-width: 600px;
   margin: 0 auto;
+}
+
+.contact__text--narrow {
+  max-width: 465px;
 }
 
 .contact__buttons {

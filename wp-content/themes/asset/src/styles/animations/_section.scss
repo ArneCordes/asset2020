@@ -11,6 +11,11 @@
   content: "";
 }
 
+// .section--bg-lightgray .css-animate .section__title:before,
+// .section--bg-lightgray .css-animate .news-slider__nav:before {
+//   background-color: $color-lightgray;
+// }
+
 .css-animate .news-slider__nav:before,
 .css-animate .section__title--text-left:before {
   right: auto;
