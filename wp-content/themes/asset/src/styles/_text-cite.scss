@@ -1,0 +1,38 @@
+.text-cite {
+  display: flex;
+  gap: 70px;
+}
+
+.text-cite__content {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+.text-cite__roof {
+  @extend %font-blair;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.text-cite__headline,
+.text-cite__cite {
+  @extend .text-image__headline;
+  flex: 0 0 50%;
+}
+
+.text-cite__headline {
+  margin-bottom: 1.5em;
+}
+
+.text-cite__text {
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.text-cite__cite {
+  margin-top: 80px;
+  flex-basis: 50%;
+  font-size: 1.5rem;
+}

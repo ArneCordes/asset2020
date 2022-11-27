@@ -303,28 +303,28 @@
           Kontakt
         </span>
       </h2>
-      <div class="contact">
-        <h2 class="contact__headline">
+      <div class="text-section">
+        <h2 class="text-section__headline">
           Sprechen sie uns an!
         </h2>
-        <div class="contact__text">
+        <div class="text-section__text">
           <p>
             Sie haben Fragen zu unserem Unternehmen oder interessieren sich für ein spezielles Objekt? Sprechen Sie uns an, oder schreiben Sie uns eine Mail! Wir helfen Ihnen gerne!
           </p>
         </div>
-        <ul class="contact__buttons">
-          <li class="contact__buttons-item">
-            <a href="#" class="contact__buttons-anchor">
-              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/phone.png" class="contact__buttons-icon" alt="Dummy">
-              <div class="contact__buttons-text">
+        <ul class="text-section__buttons">
+          <li class="text-section__buttons-item">
+            <a href="#" class="text-section__buttons-anchor">
+              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/phone.png" class="text-section__buttons-icon" alt="Dummy">
+              <div class="text-section__buttons-text">
                 Jetzt anrufen
               </div>
             </a>
           </li>
-          <li class="contact__buttons-item">
-            <a href="#" class="contact__buttons-anchor">
-              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/plane.png" class="contact__buttons-icon" alt="Dummy">
-              <div class="contact__buttons-text">
+          <li class="text-section__buttons-item">
+            <a href="#" class="text-section__buttons-anchor">
+              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/plane.png" class="text-section__buttons-icon" alt="Dummy">
+              <div class="text-section__buttons-text">
                 Mail schreiben
               </div>
             </a>

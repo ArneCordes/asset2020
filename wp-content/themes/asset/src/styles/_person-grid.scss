@@ -1,0 +1,19 @@
+.person-grid {
+  position: relative;
+  top: -120px;
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.25rem;
+  color: $color-darkgray;
+
+  a:hover {
+    color: $color-main;
+  }
+}
+
+.person-grid__item {
+  flex: 0 0 240px;
+}

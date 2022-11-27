@@ -1,0 +1,17 @@
+.post-list__content {
+  padding: 40px 0;
+}
+
+.post-list__item .text-image__image-wrapper {
+  aspect-ratio: 4 / 3;
+}
+
+body .post-list__item .text-image__content {
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.post-list__item--image-right .text-image__content {
+  text-align: right;
+}

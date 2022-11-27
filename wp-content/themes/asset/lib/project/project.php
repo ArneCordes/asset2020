@@ -22,9 +22,10 @@ function post_type_project() {
   $args = array(
   	'labels'             => $labels,
     'public'             => true,
-    'rewrite'            => array('slug' => 'projekt'),
+    'rewrite'            => array('slug' => 'projekte'),
+    'has_archive'        => true,
   	'capability_type'    => 'post',
-    'supports'           => array('title'),
+    'supports'           => array('title', 'thumbnail'),
     'menu_icon'          => 'dashicons-admin-multisite',
   );
 

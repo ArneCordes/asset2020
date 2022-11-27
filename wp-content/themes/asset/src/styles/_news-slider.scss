@@ -31,27 +31,11 @@
 }
 
 .news-slider__nav {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-
-  &:after {
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    width: 100%;
-    border-top: 1px solid #000;
-    content: "";
-  }
+  @extend .pagination;
 }
 
 .news-slider__nav-buttons {
-  position: relative;
-  z-index: 20;
-
-  padding: 0 20px;
-  margin-right: 33%;
-  background-color: #fff;
+  @extend .pagination__buttons;
 }
 
 body .news-slider__pagination {

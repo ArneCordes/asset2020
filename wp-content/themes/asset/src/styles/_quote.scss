@@ -1,0 +1,38 @@
+.quote {
+  @extend %font-blair;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-main;
+  color: #fff;
+}
+
+.quote__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+}
+
+.quote__text {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.quote__text-line {
+  &:not(:nth-child(odd)) {
+    padding-left: 90px;
+  }
+
+  &:last-child {
+    padding-left: 45px;
+  }
+}
+
+.quote__text-source {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-left: auto;
+}

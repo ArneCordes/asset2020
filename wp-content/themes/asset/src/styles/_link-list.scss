@@ -1,0 +1,51 @@
+.link-list {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid $color-main;
+  border-bottom: 1px solid $color-main;
+  color: $color-darkgray;
+  font-weight: bold;
+  font-size: 1.065rem;
+  text-transform: uppercase;
+}
+
+.link-list__items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: -25px;
+  box-sizing: border-box;
+}
+
+.link-list__item {
+  flex: 0 0 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+  font-family: "Greta Text Bold\ 3";
+  box-sizing: border-box;
+}
+
+
+.link-list__link {
+  display: flex;
+  align-items: flex-start;
+
+  &:before {
+    display: inline-block;
+    flex: 0 0 4px;
+    width: 4px;
+    height: 12px;
+    margin-top: 4px;
+    margin-right: 7px;
+    background-color: $color-main;
+    content: "";
+  }
+
+  &:hover {
+    color: $color-main;
+  }
+}

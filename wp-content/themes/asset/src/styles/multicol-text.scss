@@ -1,0 +1,11 @@
+.multicol-text {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 30px;
+  border-bottom: 1.5px solid $color-darkgray;
+}
+
+.multicol-text__text {
+  columns: 2;
+  column-gap: 60px;
+}

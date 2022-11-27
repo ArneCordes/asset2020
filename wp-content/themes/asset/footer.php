@@ -1,4 +1,4 @@
-    <div class="page-footer">
+    <div class="page-footer<?php echo get_field( 'footer-bg' ) ? ' page-footer--bg-' . get_field( 'footer-bg' ) : ''; ?>">
       <div class="container container--wide">
         <div class="page-footer__inner">
           <div class="page-footer__row">

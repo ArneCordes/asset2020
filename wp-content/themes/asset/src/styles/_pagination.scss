@@ -1,0 +1,113 @@
+.pagination {
+  margin-top: 100px;
+
+  &:after {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    width: 100%;
+    border-top: 1px solid #000;
+    content: "";
+  }
+}
+
+.pagination,
+.wp-paginate {
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination__buttons,
+.pagination .navigation {
+  position: relative;
+  z-index: 20;
+  padding: 0 20px;
+  margin-right: 33%;
+  background-color: #fff;
+}
+
+.pagination .navigation {
+  margin-right: 50%;
+  transform: translateX(50%);
+}
+
+.wp-paginate {
+  background-color: #fff;
+}
+
+.pagination__button,
+.wp-paginate a,
+.wp-paginate span {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid $color-darkgray;
+  color: $color-darkgray;
+  border-radius: 4px;
+
+  &:after {
+    font-family: 'icomoon';
+    font-size: 16px;
+    color: $color-darkgray;
+  }
+}
+
+.pagination__button,
+.wp-paginate a {
+  cursor: pointer;
+
+  &, &:after {
+    transition: all $transition-speed;
+  }
+
+  &:hover {
+    border-color: $color-main;
+
+    &, &:after {
+      color: $color-main;
+    }
+  }
+}
+
+.pagination__button,
+.wp-paginate li {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.wp-paginate li .prev,
+.wp-paginate li .next {
+  font-family: 'icomoon';
+  font-size: 0;
+
+  &:after {
+    font-size: 16px;
+  }
+}
+
+.wp-paginate .page {
+  @extend %font-blair;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+body .pagination__button--prev,
+.wp-paginate li .prev {
+  &:after {
+    content: "\e900";
+    padding-right: 1px;
+  }
+}
+
+body .pagination__button--next,
+.wp-paginate li .next {
+  &:after {
+    content: "\e901";
+    padding-left: 1px;
+  }
+}

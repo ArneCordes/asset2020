@@ -13,6 +13,8 @@ add_action('after_setup_theme', 'theme_setup');
 function theme_setup() {
   load_theme_textdomain('asset', get_template_directory() . '/languages');
 
+  add_theme_support('post-thumbnails');
+
   register_nav_menus( array(
     'primary' => 'Hauptmenü',
     'footer-1' => 'Footer-Menü 1',

@@ -1,0 +1,37 @@
+.person__image-wrapper {
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  padding: 15px;
+  border: 1px solid $color-main;
+  background-color: #fff;
+  margin-bottom: 45px;
+}
+
+.person__image {
+  position: static;
+  display: block;
+  border-radius: 100%;
+  border: 1px solid $color-main;
+}
+
+.person__name {
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $color-main;
+  margin-bottom: 15px;
+}
+
+.person__position {
+  @extend %font-blair;
+  font-size: 0.9rem;
+}
+
+.person__contact {
+  margin-top: 20px;
+}
+
+.person__contact-item {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

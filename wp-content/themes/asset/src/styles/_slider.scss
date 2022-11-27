@@ -3,36 +3,7 @@
 }
 
 body .slider__button {
-  display: flex;
-  width: 32px;
-  height: 32px;
-  justify-content: center;
-  align-items: center;
-  border: 1.5px solid #000;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  &:after {
-    font-family: 'icomoon';
-    font-size: 16px;
-    color: #000;
-  }
-
-  &, &:after {
-    transition: all $transition-speed;
-  }
-
-  &:hover {
-    border-color: $color-main;
-
-    &:after {
-      color: $color-main;
-    }
-  }
+  @extend .pagination__button;
 }
 
 .slider__nav-buttons--centered .slider__button {
@@ -71,8 +42,7 @@ body .slider__button {
 }
 
 body .slider__button--prev:after {
-  content: "\e900";
-  padding-right: 1px;
+  @extend .pagination__button--prev;
 }
 
 body .slider__nav-buttons--centered .slider__button--prev:after {
@@ -80,8 +50,7 @@ body .slider__nav-buttons--centered .slider__button--prev:after {
 }
 
 body .slider__button--next:after {
-  content: "\e901";
-  padding-left: 1px;
+  @extend .pagination__button--next;
 }
 
 body .slider__nav-buttons--centered .slider__button--next:after {

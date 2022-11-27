@@ -1,5 +1,7 @@
 <?php
 $gallery = get_field( 'gallery' );
+$show_text_image = get_field( 'show-text-image' );
+$text_image = get_field( 'text-image' );
 ?>
 
 <?php get_header(); ?>
@@ -54,16 +56,7 @@ $gallery = get_field( 'gallery' );
     </h1>
     <div class="single-project__info row">
       <div class="single-project__datalist-col col col--1-3">
-        <ul class="single-project__datalist datalist">
-          <?php
-          get_template_part( 'partials/datalist', null, [ 'items' =>  [
-            'Verkaufbare Fläche' => get_field( 'saleable-area' ),
-            'Projektvolumen' => get_field( 'volume' ),
-            'Wohneinheiten' => get_field( 'units' ),
-            'Vertriebsbeginn' => get_field( 'sales-start' )
-          ] ] );
-          ?>
-        </ul>
+        <?php get_template_part( 'partials/project-key-data' ); ?>
       </div>
       <div class="single-project__text-col col col--2-3">
         <div class="single-project__text text">
@@ -89,7 +82,7 @@ $gallery = get_field( 'gallery' );
   </div>
 </div>
 
-<div class="section section--topspace-none" data-css-animate>
+<div class="section section--topspace-none<?php echo !$show_text_image ? ' section--bottomspace-none' : ''; ?>" data-css-animate>
   <div class="container container--wide">
     <h2 class="section__title">
       <span class="section__title-text">
@@ -104,42 +97,56 @@ $gallery = get_field( 'gallery' );
   </div>
 </div>
 
-<div class="single-project__sales-section section section--bg-lightgray section--topspace-halve">
-  <div class="container">
-    <div class="text-image text-image--image-offset text-image--image-offset-lg" data-css-animate>
-      <div class="text-image__content">
-        <h2 class="text-image__roof text-image__roof--outside">
-          <div class="text-image__roof-text section__title-text">
-            Vertrieb
+<?php if( $show_text_image ): ?>
+  <div class="single-project__sales-section section section--bg-lightgray section--topspace-halve">
+    <div class="container">
+      <div class="text-image text-image--image-offset text-image--image-offset-lg" data-css-animate>
+        <div class="text-image__content">
+          <?php if( !empty( $text_image['headline'] ) ): ?>
+            <h2 class="text-image__roof text-image__roof--outside">
+              <div class="text-image__roof-text section__title-text">
+                <?php echo $text_image['headline']; ?>
+              </div>
+            </h2>
+          <?php endif; ?>
+          <div class="text-image__text text">
+            <?php echo $text_image['text']; ?>
           </div>
-        </h2>
-        <div class="text-image__text text">
-          <p>
-            Vertriebspartner für dieses Projekt ist Bremische Volksbank Immobilien GmbH. Weitere Informationen finden Sie hier:
-          </p>
-          <p>
-            <a href="#">Bremische Volksbank Immobilien GmbH – Objekte</a>
-          </p>
-        </div>
-        <a href="#" class="text-image__button button hover-text">
-          <span class="hover-text__text">
-            Zur Übersicht
-          </span>
-          <span class="hover-text__overlay">
-            <span class="hover-text__overlay-text">
+          <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-image__button button hover-text">
+            <span class="hover-text__text">
               Zur Übersicht
             </span>
-          </span>
-        </a>
-      </div>
-      <div class="text-image__media">
-        <div class="text-image__image-wrapper responsive-image-wrapper responsive-image-wrapper--16-9">
-          <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/asset-spascher-gaerten-05.jpg" class="text-image__image responsive-image" alt="Dummy">
+            <span class="hover-text__overlay">
+              <span class="hover-text__overlay-text">
+                Zur Übersicht
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="text-image__media">
+          <div class="text-image__image-wrapper responsive-image-wrapper responsive-image-wrapper--16-9">
+            <?php echo wp_get_attachment_image( $text_image['image'], 'large', null, [ 'class' => 'text-image__image responsive-image' ] ); ?>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+<?php else: ?>
+  <div class="single-project__back-section section section--bg-lightgray section--topspace-halve">
+    <div class="container">
+      <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-image__button button hover-text">
+        <span class="hover-text__text">
+          Zur Übersicht
+        </span>
+        <span class="hover-text__overlay">
+          <span class="hover-text__overlay-text">
+            Zur Übersicht
+          </span>
+        </span>
+      </a>
+    </div>
+  </div>
+<?php endif; ?>
 
 <div class="section section--topspace-none" data-css-animate>
   <div class="container">

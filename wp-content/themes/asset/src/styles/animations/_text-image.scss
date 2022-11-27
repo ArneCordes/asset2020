@@ -1,28 +1,51 @@
-.css-animate .text-image__headline,
-.css-animate .text-image__text,
-.css-animate .text-image__button {
+.css-animate.text-image .text-image__roof--simple,
+.css-animate.text-image .text-image__headline,
+.css-animate.text-image .text-image__text,
+.css-animate.text-image .text-image__button {
   opacity: 0;
   transform: translateX(-70px);
 }
 
-.css-animate--start .text-image__headline,
-.css-animate--start .text-image__text,
-.css-animate--start .text-image__button {
+.css-animate.text-image--reverse .text-image__roof--simple,
+.css-animate.text-image--reverse .text-image__headline,
+.css-animate.text-image--reverse .text-image__text,
+.css-animate.text-image--reverse .text-image__button {
+  transform: translateX(70px);
+}
+
+.css-animate--start.text-image .text-image__roof--simple,
+.css-animate--start.text-image .text-image__headline,
+.css-animate--start.text-image .text-image__text,
+.css-animate--start.text-image .text-image__button {
   opacity: 1;
   transform: translateX(0);
   transition: all 1.5s;
 }
 
-.css-animate--start .text-image__headline {
+.css-animate.text-image .text-image__roof--simple:before {
+  width: 0;
+
+}
+
+.css-animate--start.text-image .text-image__roof--simple:before {
+  width: 100px;
+  transition: all 1.5s;
+}
+
+.css-animate--start.text-image .text-image__headline {
   transition-delay: 0.2s;
 }
 
-.css-animate .text-image__image-wrapper {
+.css-animate.text-image .text-image__image-wrapper {
   opacity: 0;
   transform: translateX(70px);
 }
 
-.css-animate--start .text-image__image-wrapper {
+.css-animate.text-image--reverse .text-image__image-wrapper {
+  transform: translateX(-70px);
+}
+
+.css-animate--start.text-image .text-image__image-wrapper {
   opacity: 1;
   transform: translateX(0);
   transition: all 1.5s;

@@ -14,10 +14,16 @@
 @import 'footer-button';
 @import 'container';
 @import 'section';
+@import 'text-section';
+@import 'multicol-text';
+@import 'animations/text-section';
+@import 'pagination';
 @import 'animations/section';
 @import 'page-header';
+@import 'site-header';
 @import 'slider';
 @import 'datalist';
+@import 'post-list';
 @import 'image-grid';
 @import 'news-slider';
 @import 'single-slider';
@@ -25,11 +31,15 @@
 @import 'animations/news-slider';
 @import 'text-image';
 @import 'animations/text-image';
+@import 'text-cite';
 @import 'facts';
 @import 'image-slider';
 @import 'animations/image-slider';
-@import 'contact';
 @import 'single-project';
 @import 'location-map';
-@import 'animations/contact';
+@import 'quote';
+@import 'link-list';
+@import 'person';
+@import 'person-grid';
+
 @import 'page-footer';
