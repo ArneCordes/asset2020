@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 
 <div class="site-header site-header--bg-lightgray">
-  <div class="site-header__content">
+  <div class="site-header__content site-header__content--centered">
     <h1 class="site-header__headline">
-      Auch die komplexesten Projekte fangen ganz einfach an. <span class="color-main">Mit einer Idee.</span>
+      Aktuelle Medienberichte<br>
+      <span class="color-main">auf einen Blick</span>
     </h1>
   </div>
 </div>
+
 
 <main>
   <div class="container">
@@ -16,14 +18,20 @@
           <div class="section section--topspace-none section--bottomspace-none" data-css-animate>
             <h2 class="section__title<?php echo $i % 2 == 0 ? ' section__title--text-left section__title--arrow' : ''; ?>">
               <span class="section__title-text">
-                <?php the_title(); ?>
+                <?php the_field( 'medium' ); ?>
               </span>
             </h2>
             <div class="post-list__content">
               <div class="text-image<?php echo $i % 2 == 0 ? ' text-image--reverse' : ''; ?>" data-css-animate>
                 <div class="text-image__content">
+                  <div class="text-image__roof--simple">
+                    <?php the_field( 'date' ); ?>
+                  </div>
+                  <h3 class="text-image__headline text-image__headline--bottomspace-lg">
+                    <?php the_title(); ?>
+                  </h3>
                   <div class="text-image__text text">
-                    <?php get_template_part( 'partials/project-key-data', null, [ 'limit' => 5 ] ); ?>
+                    <?php the_field( 'short-text' ); ?>
                   </div>
                   <a href="<?php the_permalink(); ?>" class="text-image__button button hover-text">
                     <span class="hover-text__text">
@@ -31,7 +39,7 @@
                     </span>
                     <span class="hover-text__overlay">
                       <span class="hover-text__overlay-text">
-                        Zum Projekt
+                        Zum Artikel
                       </span>
                     </span>
                   </a>

@@ -52,7 +52,8 @@
 }
 
 .page-header__nav-menu li.current-menu-item a:after,
-.single-project .page-header__nav-menu li.projects-item a:after {
+.single-project .page-header__nav-menu li.projects-item a:after,
+.single-press_release .page-header__nav-menu li.press-item a:after {
   position: absolute;
   top: 100%;
   display: block;
@@ -63,7 +64,8 @@
 }
 
 .page-header__nav-menu li:not(.current-menu-item) a:hover,
-.single-project .page-header__nav-menu li.projects-item a:after {
+.single-project .page-header__nav-menu li.projects-item a:after,
+.single-press_release .page-header__nav-menu li.press-item a:after {
   color: $color-main;
 }
 

@@ -15,4 +15,13 @@
 
 .datalist__value {
   font-size: 1.25rem;
+
+  a {
+    border-bottom: 1.5px solid $color-text;
+
+    &:hover {
+      color: $color-main;
+      border-color: $color-main;
+    }
+  }
 }

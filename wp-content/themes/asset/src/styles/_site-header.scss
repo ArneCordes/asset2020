@@ -1,5 +1,6 @@
 .site-header,
 .site-header__content {
+  max-width: 1140px;
   aspect-ratio: 16 / 8;
 }
 
@@ -20,8 +21,17 @@
   align-items: center;
 }
 
+.site-header__content--centered {
+  text-align: center;
+}
+
 .site-header--bg-lightgray .site-header__content {
   background-color: $color-lightgray;
+}
+
+.site-header__content .single-slider {
+  width: 100%;
+  height: 100%;
 }
 
 .site-header__headline {
@@ -31,8 +41,4 @@
   font-size: 2.815rem;
   font-weight: bold;
   color: $color-darkgray;
-}
-
-.site-header--bg-lightgray .site-header__headline {
-  max-width: 1140px;
 }
