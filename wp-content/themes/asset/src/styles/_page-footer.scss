@@ -63,17 +63,19 @@
   line-height: 1.2;
   text-align: center;
 
-  &:before {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-family: 'icomoon';
-    content: "\edd4";
+  &:hover {
+    color: $color-darkgray;
   }
+}
+
+.page-footer--bg-lightgray .page-footer__scroll {
+  background-color: $color-lightgray;
 }
 
 .page-footer__scroll-text {
   display: block;
   max-width: 60px;
+  margin-top: 10px;
   font-family: "Greta Text Bold 3";
   font-style: italic;
 }

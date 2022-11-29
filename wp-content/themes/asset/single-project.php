@@ -54,7 +54,7 @@ $text_image = get_field( 'text-image' );
         <?php the_title() ?>
       </span>
     </h1>
-    <div class="single-project__info row">
+    <div class="single-project__info row" data-css-animate>
       <div class="single-project__datalist-col col col--1-3">
         <?php get_template_part( 'partials/project-key-data' ); ?>
       </div>
@@ -74,11 +74,20 @@ $text_image = get_field( 'text-image' );
         Location
       </span>
     </h2>
-    <div class="location-map">
-      <div class="location-map__image-wrapper responsive-image-wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/map.jpg" class="location-map__image responsive-image" alt="Karte">
-      </div>
-    </div>
+    <?php if( $maps_url = get_field( 'maps-url' ) ): ?>
+      <a href="<?php echo $maps_url; ?>" class="location-map" target="_blank">
+        <div class="location-map__image-wrapper responsive-image-wrapper">
+          <lottie-player
+            src="<?php echo get_template_directory_uri(); ?>/src/json/Location.json"
+            background="transparent"
+            speed="1"
+            class="location-map__marker"
+            style="width: 140px; height: 140px;" loop autoplay
+            ></lottie-player>
+          <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/map.jpg" class="location-map__image responsive-image" alt="Karte">
+        </div>
+      </a>
+    <?php endif; ?>
   </div>
 </div>
 
@@ -150,52 +159,17 @@ $text_image = get_field( 'text-image' );
 
 <div class="section section--topspace-none" data-css-animate>
   <div class="container">
-    <div class="contact">
-      <h2 class="contact__headline contact__headline--alt">
+    <div class="text-section">
+      <h2 class="text-section__headline text-section__headline--alt">
         Haben Sie Fragen<br>
         zu diesem Projekt?
       </h2>
-      <div class="contact__text contact__text--narrow">
+      <div class="text-section__text text-section__text--narrow">
         <p>
           Wenn Sie Interesse an diesem Objekt haben, mehr erfahren wollen, oder über den weiteren Projektverlauf werden wollen, dann melden Sie sich doch! Wir beantworten Ihre Fragen gerne!
         </p>
       </div>
-      <ul class="contact__buttons">
-        <li class="contact__buttons-item">
-          <a href="tel:+493040048714" class="contact__buttons-anchor">
-            <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/phone.png" class="contact__buttons-icon" alt="Dummy">
-            <div class="contact__buttons-text">
-              <span class="hover-text hover-text--fade">
-                <span class="hover-text__text">
-                  Jetzt anrufen
-                </span>
-                <span class="hover-text__overlay">
-                  <span class="hover-text__overlay-text">
-                    T: 030 / 40 04 87 – 14
-                  </span>
-                </span>
-              </span>
-            </div>
-          </a>
-        </li>
-        <li class="contact__buttons-item">
-          <a href="mailto:service@asset-firmengruppe.de" class="contact__buttons-anchor">
-            <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/plane.png" class="contact__buttons-icon" alt="Dummy">
-            <div class="contact__buttons-text">
-              <span class="hover-text hover-text--fade">
-                <span class="hover-text__text">
-                  Mail schreiben
-                </span>
-                <span class="hover-text__overlay">
-                  <span class="hover-text__overlay-text">
-                    service@asset-firmengruppe.de
-                  </span>
-                </span>
-              </span>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <?php get_template_part( 'partials/contact-section-buttons' ); ?>
     </div>
   </div>
 </div>

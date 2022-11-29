@@ -24,6 +24,12 @@
             <?php endforeach; ?>
           </div>
           <a href="#" class="page-footer__scroll">
+            <lottie-player
+              src="<?php echo get_template_directory_uri(); ?>/src/json/Back-To-Top-Arrow.json"
+              background="transparent"
+              speed="1"
+              style="width: 40px; height: 40px; transform:rotate(90deg);" loop autoplay
+            ></lottie-player>
             <span class="page-footer__scroll-text">
               Zurück nach oben
             </span>

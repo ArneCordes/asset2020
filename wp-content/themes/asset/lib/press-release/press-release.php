@@ -31,3 +31,19 @@ function post_type_press_release() {
 
   register_post_type('press_release', $args);
 }
+
+add_action('pre_get_posts', 'press_release_pre_get_posts');
+
+function press_release_pre_get_posts($query) {
+  if(is_admin()) {
+    return $query;
+  }
+
+  if(isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'press_release') {
+    $query->set('meta_key', 'date');
+    $query->set('orderby', 'meta_value');
+    $query->set('order', 'DESC');
+  }
+
+  return $query;
+}

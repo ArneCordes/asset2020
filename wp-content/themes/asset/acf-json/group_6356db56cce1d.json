@@ -68,6 +68,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_638666544fc26",
+            "label": "Maps URL",
+            "name": "maps-url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_638337dd29170",
             "label": "Eckdaten",
             "name": "key-data",
@@ -274,5 +290,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1669544255
+    "modified": 1669752418
 }

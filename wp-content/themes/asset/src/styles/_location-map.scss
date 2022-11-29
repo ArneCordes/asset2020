@@ -1,7 +1,21 @@
 .location-map {
-  padding-top: 30px;
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  align-items: center;
 }
 
 .location-map__image-wrapper {
   aspect-ratio: 16 / 6;
+}
+
+.location-map__marker {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  transition: transform $transition-speed;
 }

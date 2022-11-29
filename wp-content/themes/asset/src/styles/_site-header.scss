@@ -35,6 +35,7 @@
 }
 
 .site-header__headline {
+  opacity: 0;
   @extend %font-blair;
   padding-left: 50px;
   padding-right: 50px;

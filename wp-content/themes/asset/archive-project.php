@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="site-header site-header--bg-lightgray">
+<div class="site-header site-header--bg-lightgray" data-css-animate>
   <div class="site-header__content">
     <h1 class="site-header__headline">
       Auch die komplexesten Projekte fangen ganz einfach an. <span class="color-main">Mit einer Idee.</span>
@@ -13,14 +13,14 @@
     <div class="post-list">
       <?php if( have_posts()) : $i = 0; while ( have_posts() ) : the_post(); ?>
         <div class="post-list__item post-list__item--image-<?php echo $i % 2 == 0 ? 'left' : 'right'; ?>">
-          <div class="section section--topspace-none section--bottomspace-none" data-css-animate>
+          <div class="section section--topspace-none section--bottomspace-none"<?php echo $i > 0 ? ' data-css-animate' : ''; ?>>
             <h2 class="section__title<?php echo $i % 2 == 0 ? ' section__title--text-left section__title--arrow' : ''; ?>">
               <span class="section__title-text">
                 <?php the_title(); ?>
               </span>
             </h2>
             <div class="post-list__content">
-              <div class="text-image<?php echo $i % 2 == 0 ? ' text-image--reverse' : ''; ?>" data-css-animate>
+              <div class="text-image<?php echo $i % 2 == 0 ? ' text-image--reverse' : ''; ?>"<?php echo $i > 0 ? ' data-css-animate' : ''; ?>>
                 <div class="text-image__content">
                   <div class="text-image__text text">
                     <?php get_template_part( 'partials/project-key-data', null, [ 'limit' => 5 ] ); ?>
@@ -67,24 +67,7 @@
             Sie haben Fragen zu unserem Unternehmen oder interessieren sich für ein spezielles Objekt? Sprechen Sie uns an, oder schreiben Sie uns eine Mail! Wir helfen Ihnen gerne!
           </p>
         </div>
-        <ul class="text-section__buttons">
-          <li class="text-section__buttons-item">
-            <a href="#" class="text-section__buttons-anchor">
-              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/phone.png" class="text-section__buttons-icon" alt="Dummy">
-              <div class="text-section__buttons-text">
-                Jetzt anrufen
-              </div>
-            </a>
-          </li>
-          <li class="text-section__buttons-item">
-            <a href="#" class="text-section__buttons-anchor">
-              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/plane.png" class="text-section__buttons-icon" alt="Dummy">
-              <div class="text-section__buttons-text">
-                Mail schreiben
-              </div>
-            </a>
-          </li>
-        </ul>
+        <?php get_template_part( 'partials/contact-section-buttons' ); ?>
       </div>
     </div>
   </div>

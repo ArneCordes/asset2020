@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div class="site-header site-header--bg-lightgray">
+<div class="site-header site-header--bg-lightgray" data-css-animate>
   <div class="site-header__content">
     <h1 class="site-header__headline">
       Wir sind <span class="color-main">für Sie da.</span>
@@ -27,24 +27,7 @@
             Sie haben Fragen zu unserem Unternehmen oder interessieren sich für ein spezielles Objekt? Sprechen Sie uns an, oder schreiben Sie uns eine Mail! Wir helfen Ihnen gerne!
           </p>
         </div>
-        <ul class="text-section__buttons">
-          <li class="text-section__buttons-item">
-            <a href="#" class="text-section__buttons-anchor">
-              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/phone.png" class="text-section__buttons-icon" alt="Dummy">
-              <div class="text-section__buttons-text">
-                Jetzt anrufen
-              </div>
-            </a>
-          </li>
-          <li class="text-section__buttons-item">
-            <a href="#" class="text-section__buttons-anchor">
-              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/plane.png" class="text-section__buttons-icon" alt="Dummy">
-              <div class="text-section__buttons-text">
-                Mail schreiben
-              </div>
-            </a>
-          </li>
-        </ul>
+        <?php get_template_part( 'partials/contact-section-buttons' ); ?>
       </div>
     </div>
   </div>

@@ -1,0 +1,27 @@
+.css-animate .single-project__datalist-col,
+.css-animate .single-project__text-col {
+  opacity: 0;
+  transform: translateX(-70px);
+}
+
+.css-animate .single-project__text-col {
+  transform: translateX(70px);
+}
+
+.css-animate--start .single-project__datalist-col,
+.css-animate--start .single-project__text-col {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.5s;
+  transition-delay: 0.3s;
+}
+
+.css-animate .single-project__microlage {
+  opacity: 0;
+}
+
+.css-animate--start .single-project__microlage {
+  opacity: 1;
+  transition: all 1s;
+  transition-delay: 0.6s;
+}

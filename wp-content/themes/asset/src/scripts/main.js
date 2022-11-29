@@ -2,6 +2,11 @@
   $(function() {
     $('html').toggleClass('no-js js');
 
+    $('.page-footer__scroll').click(function(e) {
+      e.preventDefault();
+      scrollTo($('body'));
+    });
+
     // Collapsible header
     $(window).scroll(function() {
       if($(this).scrollTop() > 10) {

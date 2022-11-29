@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div class="site-header">
+<div class="site-header" data-css-animate>
   <div class="site-header__content">
     <h1 class="site-header__headline">
       Wir schaffen <span class="color-main">Lebensqualität.</span>
@@ -222,7 +222,7 @@
           Investment
         </span>
       </h2>
-      <div class="multicol-text">
+      <div class="multicol-text" data-css-animate>
         <h2 class="multicol-text__headline text-section__headline text-section__headline--lg">
           Immobilien Investment<br>
           ist <span class="color-main">Vertrauenssache.</span>
@@ -336,7 +336,7 @@
 
   <div class="section section--bg-lightgray section--topspace-none section--bottomspace-none">
     <div class="container container--wide">
-      <ul class="person-grid">
+      <ul class="person-grid" data-css-animate>
         <?php foreach( [1,2,3] as $i ): ?>
           <li class="person-grid__item">
             <div class="person">

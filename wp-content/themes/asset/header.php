@@ -15,6 +15,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="format-detection" content="telephone=no">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>

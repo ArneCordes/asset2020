@@ -1,0 +1,41 @@
+.css-animate .text-cite__roof,
+.css-animate .text-cite__headline {
+  opacity: 0;
+  transform: translateX(-70px);
+}
+
+.css-animate--start .text-cite__roof,
+.css-animate--start .text-cite__headline {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.5s;
+}
+
+.css-animate--start .text-image__headline {
+  transition-delay: 0.2s;
+}
+
+.css-animate .text-cite__text {
+  opacity: 0;
+  transform: translateY(70px);
+}
+
+.css-animate--start .text-cite__text {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1.5s;
+  transition-delay: 0.3s;
+}
+
+
+.css-animate .text-cite__cite {
+  opacity: 0;
+  transform: translateX(70px);
+}
+
+.css-animate--start .text-cite__cite {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1.5s;
+  transition-delay: 0.6s;
+}

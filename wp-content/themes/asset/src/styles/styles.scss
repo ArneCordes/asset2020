@@ -16,11 +16,13 @@
 @import 'section';
 @import 'text-section';
 @import 'multicol-text';
+@import 'animations/multicol-text';
 @import 'animations/text-section';
 @import 'pagination';
 @import 'animations/section';
 @import 'page-header';
 @import 'site-header';
+@import 'animations/site-header';
 @import 'slider';
 @import 'datalist';
 @import 'post-list';
@@ -32,16 +34,23 @@
 @import 'text-image';
 @import 'animations/text-image';
 @import 'text-cite';
+@import 'animations/text-cite';
 @import 'facts';
 @import 'image-slider';
 @import 'animations/image-slider';
 @import 'single-project';
+@import 'animations/single-project';
 @import 'location-map';
+@import 'animations/location-map';
 @import 'quote';
+@import 'animations/quote';
 @import 'link-list';
+@import 'animations/link-list';
 @import 'person';
 @import 'person-grid';
+@import 'animations/person-grid';
 @import 'article';
 @import 'legal';
+@import 'animations/legal';
 
 @import 'page-footer';

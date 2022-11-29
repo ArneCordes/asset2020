@@ -1,0 +1,9 @@
+.css-animate .location-map__image-wrapper {
+  opacity: 0;
+}
+
+.css-animate--start .location-map__image-wrapper {
+  opacity: 1;
+  transition: all 1.5s;
+  transition-delay: 0.3s;
+}

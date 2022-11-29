@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div class="site-header site-header--bg-lightgray">
+<div class="site-header site-header--bg-lightgray" data-css-animate>
   <div class="site-header__content">
     <h1 class="site-header__headline">
       Impressum <span class="color-main">Datenschutz</span>
@@ -12,7 +12,7 @@
 
 <main>
   <?php foreach( get_field( 'section' ) as $i => $section ): ?>
-    <div class="section section--topspace-none" data-css-animate>
+    <div class="section section--topspace-none">
       <div class="container">
         <h2 class="section__title<?php echo $i % 2 == 0 ? ' section__title--text-left section__title--arrow' : ''; ?>">
           <span class="section__title-text">

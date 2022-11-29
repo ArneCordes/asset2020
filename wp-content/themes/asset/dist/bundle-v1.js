@@ -77,7 +77,7 @@ eval("(function ($) {\n  $.fn.cssAnimate = function (options) {\n    var setting
   \*****************************/
 /***/ (function() {
 
-eval("(function ($) {\n  $(function () {\n    $('html').toggleClass('no-js js'); // Collapsible header\n\n    $(window).scroll(function () {\n      if ($(this).scrollTop() > 10) {\n        $('.page-header').addClass('page-header--collapsed');\n      } else {\n        $('.page-header').removeClass('page-header--collapsed');\n      }\n    }).trigger('scroll');\n    $('.page-header__nav-toggle').click(function () {\n      $('.page-header').toggleClass('page-header--collapsed');\n    }); // CSS animations\n\n    $('[data-css-animate]').each(function () {\n      $(this).cssAnimate();\n    });\n  });\n})(jQuery);\n\n//# sourceURL=webpack://asset/./src/scripts/main.js?");
+eval("(function ($) {\n  $(function () {\n    $('html').toggleClass('no-js js');\n    $('.page-footer__scroll').click(function (e) {\n      e.preventDefault();\n      scrollTo($('body'));\n    }); // Collapsible header\n\n    $(window).scroll(function () {\n      if ($(this).scrollTop() > 10) {\n        $('.page-header').addClass('page-header--collapsed');\n      } else {\n        $('.page-header').removeClass('page-header--collapsed');\n      }\n    }).trigger('scroll');\n    $('.page-header__nav-toggle').click(function () {\n      $('.page-header').toggleClass('page-header--collapsed');\n    }); // CSS animations\n\n    $('[data-css-animate]').each(function () {\n      $(this).cssAnimate();\n    });\n  });\n})(jQuery);\n\n//# sourceURL=webpack://asset/./src/scripts/main.js?");
 
 /***/ }),
 
