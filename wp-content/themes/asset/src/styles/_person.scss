@@ -1,15 +1,21 @@
 .person__image-wrapper {
+  display: flex;
   aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
-  padding: 15px;
   border: 1px solid $color-main;
   background-color: #fff;
   margin-bottom: 45px;
 }
 
 .person__image {
-  position: static;
+  position: absolute;
   display: block;
+  width: calc(100% - 26px);
+  height: calc(100% - 26px);
+  margin-top: 12px;
+  margin-left: 12px;
   border-radius: 100%;
   border: 1px solid $color-main;
 }
