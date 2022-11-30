@@ -47,14 +47,14 @@ $text_image = get_field( 'text-image' );
   </div>
 <?php endif; ?>
 
-<div class="section section--bottomspace-halve" data-css-animate>
+<div class="section section--bottomspace-halve">
   <div class="container container--wide">
     <h1 class="section__title section__title--arrow">
       <span class="section__title-text">
         <?php the_title() ?>
       </span>
     </h1>
-    <div class="single-project__info row" data-css-animate>
+    <div class="single-project__info row">
       <div class="single-project__datalist-col col col--1-3">
         <?php get_template_part( 'partials/project-key-data' ); ?>
       </div>
