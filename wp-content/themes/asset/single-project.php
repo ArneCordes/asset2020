@@ -67,7 +67,7 @@ $text_image = get_field( 'text-image' );
   </div>
 </div>
 
-<div class="section section--topspace-none section--bottomspace-halve" data-css-animate>
+<div class="section section--topspace-none <?php echo get_field( 'microlage' ) ? ' section--bottomspace-halve' : ' section--bottomspace-x2'; ?>" data-css-animate>
   <div class="container container--wide">
     <h2 class="section__title section__title--text-left">
       <span class="section__title-text">
@@ -91,20 +91,22 @@ $text_image = get_field( 'text-image' );
   </div>
 </div>
 
-<div class="section section--topspace-none<?php echo !$show_text_image ? ' section--bottomspace-none' : ''; ?>" data-css-animate>
-  <div class="container container--wide">
-    <h2 class="section__title">
-      <span class="section__title-text">
-        Microlage
-      </span>
-    </h2>
-    <div class="single-project__microlage">
-      <div class="single-project__microlage-image-wrapper">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/microlage.png" class="single-project__microlage-image" alt="Karte">
+<?php if( $microlage = get_field( 'microlage' ) ): ?>
+  <div class="section section--topspace-none<?php echo !$show_text_image ? ' section--bottomspace-none' : ''; ?>" data-css-animate>
+    <div class="container container--wide">
+      <h2 class="section__title">
+        <span class="section__title-text">
+          Microlage
+        </span>
+      </h2>
+      <div class="single-project__microlage">
+        <div class="single-project__microlage-image-wrapper">
+          <?php echo wp_get_attachment_image( $microlage, 'large', null, [ 'class' => 'single-project__microlage-image' ] ); ?>
+        </div>
       </div>
     </div>
   </div>
-</div>
+<?php endif; ?>
 
 <?php if( $show_text_image ): ?>
   <div class="single-project__sales-section section section--bg-lightgray section--topspace-halve">
