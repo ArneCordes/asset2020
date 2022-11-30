@@ -68,7 +68,14 @@ $text_image = get_field( 'text-image' );
 </div>
 
 <?php if( $maps_url = get_field( 'maps-url' ) ): ?>
-  <div class="section section--topspace-none section--bottomspace-halve" data-css-animate>
+
+  <?php
+  $bottomspace = 'halve';
+  if( !get_field( 'microlage' ) && $show_text_image ) {
+    $bottomspace = 'x2';
+  }
+  ?>
+  <div class="section section--topspace-none section--bottomspace-<?php echo $bottomspace; ?>" data-css-animate>
     <div class="container container--wide">
       <h2 class="section__title section__title--text-left">
         <span class="section__title-text">
