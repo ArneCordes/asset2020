@@ -67,14 +67,14 @@ $text_image = get_field( 'text-image' );
   </div>
 </div>
 
-<div class="section section--topspace-none <?php echo get_field( 'microlage' ) ? ' section--bottomspace-halve' : ' section--bottomspace-x2'; ?>" data-css-animate>
-  <div class="container container--wide">
-    <h2 class="section__title section__title--text-left">
-      <span class="section__title-text">
-        Location
-      </span>
-    </h2>
-    <?php if( $maps_url = get_field( 'maps-url' ) ): ?>
+<?php if( $maps_url = get_field( 'maps-url' ) ): ?>
+  <div class="section section--topspace-none section--bottomspace-halve" data-css-animate>
+    <div class="container container--wide">
+      <h2 class="section__title section__title--text-left">
+        <span class="section__title-text">
+          Location
+        </span>
+      </h2>
       <a href="<?php echo $maps_url; ?>" class="location-map" target="_blank">
         <div class="location-map__image-wrapper responsive-image-wrapper">
           <lottie-player
@@ -87,9 +87,9 @@ $text_image = get_field( 'text-image' );
           <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/map.jpg" class="location-map__image responsive-image" alt="Karte">
         </div>
       </a>
-    <?php endif; ?>
+    </div>
   </div>
-</div>
+<?php endif; ?>
 
 <?php if( $microlage = get_field( 'microlage' ) ): ?>
   <div class="section section--topspace-none<?php echo !$show_text_image ? ' section--bottomspace-none' : ''; ?>" data-css-animate>
@@ -143,7 +143,7 @@ $text_image = get_field( 'text-image' );
     </div>
   </div>
 <?php else: ?>
-  <div class="single-project__back-section section section--bg-lightgray section--topspace-halve">
+  <div class="single-project__back-section section section--bg-lightgray">
     <div class="container">
       <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-image__button button hover-text">
         <span class="hover-text__text">
