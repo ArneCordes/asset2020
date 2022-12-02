@@ -68,6 +68,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_6389ea11c117c",
+            "label": "Projekt URL",
+            "name": "project-url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_638666544fc26",
             "label": "Maps URL",
             "name": "maps-url",
@@ -314,5 +330,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1669803822
+    "modified": 1669982748
 }

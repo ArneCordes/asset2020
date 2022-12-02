@@ -27,9 +27,20 @@ $press_releases = get_posts( [
                 <h3 class="news-slider__headline">
                   <?php echo get_the_title( $press_release->ID ); ?>
                 </h3>
-                <div class="news-slider__text">
+                <div class="news-slider__text text">
                   <p>
                     <?php the_field( 'short-text', $press_release->ID ); ?>
+                  </p>
+                  <p>
+                    <a href="<?php echo get_the_permalink( $press_release->ID ); ?>" class="button button--arrow">
+                      Zum Artikel
+                      <lottie-player
+                        src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(2px);" loop autoplay
+                      ></lottie-player>
+                    </a>
                   </p>
                 </div>
               </div>

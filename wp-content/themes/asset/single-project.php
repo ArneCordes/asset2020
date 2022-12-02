@@ -61,6 +61,17 @@ $text_image = get_field( 'text-image' );
       <div class="single-project__text-col col col--2-3">
         <div class="single-project__text text">
           <?php the_field( 'text' ); ?>
+          <?php if( $project_url = get_field( 'project-url' ) ): ?>
+            <a href="<?php echo $project_url; ?>" class="button button--arrow" target="_blank">
+              Zur Webseite
+              <lottie-player
+                src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                background="transparent"
+                speed="1"
+                style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+              ></lottie-player>
+            </a>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -130,16 +141,6 @@ $text_image = get_field( 'text-image' );
           <div class="text-image__text text">
             <?php echo $text_image['text']; ?>
           </div>
-          <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-image__button button hover-text">
-            <span class="hover-text__text">
-              Zur Übersicht
-            </span>
-            <span class="hover-text__overlay">
-              <span class="hover-text__overlay-text">
-                Zur Übersicht
-              </span>
-            </span>
-          </a>
         </div>
         <div class="text-image__media">
           <div class="text-image__image-wrapper responsive-image-wrapper responsive-image-wrapper--16-9">
@@ -147,21 +148,6 @@ $text_image = get_field( 'text-image' );
           </div>
         </div>
       </div>
-    </div>
-  </div>
-<?php else: ?>
-  <div class="single-project__back-section section section--bg-lightgray">
-    <div class="container">
-      <a href="<?php echo get_post_type_archive_link( 'project' ); ?>" class="text-image__button button hover-text">
-        <span class="hover-text__text">
-          Zur Übersicht
-        </span>
-        <span class="hover-text__overlay">
-          <span class="hover-text__overlay-text">
-            Zur Übersicht
-          </span>
-        </span>
-      </a>
     </div>
   </div>
 <?php endif; ?>

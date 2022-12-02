@@ -5,7 +5,11 @@
     }
   }
 
-  a:hover {
+  a:not(.button) {
     color: $color-main;
+
+    &:hover {
+      color: $color-darkgray;
+    }
   }
 }

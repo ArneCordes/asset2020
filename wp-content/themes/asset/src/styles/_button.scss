@@ -1,4 +1,6 @@
 .button {
+  display: inline-flex;
+  align-items: center;
   font-family: "Greta Text Bold 3";
   text-transform: uppercase;
   color: $color-darkgray;
@@ -6,4 +8,10 @@
 
 .button--white {
   color: #fff;
+}
+
+.button--arrow {
+  &:hover {
+    color: $color-main;
+  }
 }
