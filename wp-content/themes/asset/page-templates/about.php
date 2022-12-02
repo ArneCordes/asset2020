@@ -274,7 +274,7 @@
         </h2>
         <div class="text-section__text">
           <p>
-            Entwicklung von Neubauvorhaben oder die Erstellung von Nutzungskonzeptionen (für Altbauten u.a. Fabriken) auf eigene oder fremde Rechnung. Diese Objekte werden für den eigenen langfristigen Bestand erworben oder als Verkaufsobjekte aufbereitet und an Kapitalanleger verkauft.
+            Wir unterstützen und fördern verschiedenste wohltätige Einrichtungen und Organisationen. Hier sind einige, die auf die wir gerne Augenmerk lenken würden.
           </p>
         </div>
       </div>
@@ -285,37 +285,37 @@
       <div class="link-list">
         <ul class="link-list__items">
           <li class="link-list__item">
-            <a href="#" class="link-list__link" target="_blank">
+            <a href="https://skips-bremen.de/" class="link-list__link" target="_blank">
               Starke Kids durch Pferdestärke
             </a>
           </li>
           <li class="link-list__item">
-            <a href="#" class="link-list__link" target="_blank">
+            <a href="https://www.hildebrandhaus.de/" class="link-list__link" target="_blank">
               Kinderheim Hermann Hildebrand
             </a>
           </li>
           <li class="link-list__item">
-            <a href="#" class="link-list__link" target="_blank">
+            <a href="https://bremen-nord.dlrg.de/" class="link-list__link" target="_blank">
               DLRG Bremen-Nord
             </a>
           </li>
           <li class="link-list__item">
-            <a href="#" class="link-list__link" target="_blank">
+            <a href="https://avsandfriends.de/" class="link-list__link" target="_blank">
               AVS & Friends e.V.
             </a>
           </li>
           <li class="link-list__item">
-            <a href="#" class="link-list__link" target="_blank">
+            <a href="https://www.hospizverein-bremen.de/" class="link-list__link" target="_blank">
               Hospizverein Bremen
             </a>
           </li>
           <li class="link-list__item">
-            <a href="#" class="link-list__link" target="_blank">
+            <a href="https://www.hospiz-bremen-nord.de/" class="link-list__link" target="_blank">
               Hospiz Bremen-Nord
             </a>
           </li>
           <li class="link-list__item">
-            <a href="#" class="link-list__link" target="_blank">
+            <a href="https://li.hamburg.de/buecherkoffer/" class="link-list__link" target="_blank">
               Hamburger Bücherkoffer
             </a>
           </li>
