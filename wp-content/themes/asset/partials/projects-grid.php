@@ -1,7 +1,9 @@
 <?php
 $projects = get_posts( [
   'post_type' => 'project',
-  'posts_per_page' => 3
+  'posts_per_page' => 3,
+  'meta_key' => 'add-to-projects-grid',
+  'meta_value' => '1'
 ] );
 ?>
 
