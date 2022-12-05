@@ -6,9 +6,10 @@
               <?php echo wp_get_attachment_image( get_theme_mod( 'logo_brand' ), 'full', null, array( 'class' => 'page-footer__logo' ) ); ?>
             </div>
             <div class="page-footer__col">
-              <strong><i>Asset Wohnimmobilien GmbH</i></strong><br>
-              Kadiner Str. 20<br>
-              10243 Berlin
+              <strong><i>ASSET Berlin Wohnimmobilien GmbH</i></strong><br>
+              Am Waller Freihafen 1 a<br>
+              28217 Bremen<br>
+              Deutschland
             </div>
             <?php foreach( [1,2,3,4] as $i ): ?>
               <div class="page-footer__col">
