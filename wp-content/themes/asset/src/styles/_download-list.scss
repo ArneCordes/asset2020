@@ -1,0 +1,20 @@
+.download-list {
+  text-transform: uppercase;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 0.2em;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Greta Text Bold 3";
+    outline: none !important;
+
+    &:hover {
+      color: $color-main;
+    }
+  }
+}

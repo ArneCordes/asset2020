@@ -16,8 +16,14 @@
               Die ASSET Firmengruppe wurde 1998 in Bremen gegründet. Seit dem haben wir uns mit solide geplanten Immobilienprojekten einen guten Namen gemacht . Unsere Bandbreite reichte von hochwertigen Wohnimmobilien, Verbraucher-märkten und Einkaufszentren bis hin zur Sanierung von historischen Baudenkmälern. 2016 wurde unser Unternehmen gemäß DIN ISO 9001:2015 zertifiziert. ASSET bedeutet »Vermögenswert«. Die Schaffung und Betreuung Ihrer Vermögenswerte ist uns eine Verpflichtung.
             </p>
           </div>
-          <a href="/unternehmen/" class="text-image__button button">
+          <a href="/unternehmen/" class="text-image__button button button--arrow">
             Mehr über uns
+            <lottie-player
+              src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+              background="transparent"
+              speed="1"
+              style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+            ></lottie-player>
           </a>
         </div>
         <div class="text-image__media">
@@ -84,7 +90,7 @@
 
   <?php get_template_part( 'partials/references-slider' ); ?>
 
-  <div class="section" data-css-animate>
+  <div class="section section--bottomspace-halve" data-css-animate>
     <div class="container">
       <h2 class="section__title section__title--text-center">
         <span class="section__title-text">
@@ -101,6 +107,86 @@
           </p>
         </div>
         <?php get_template_part( 'partials/contact-section-buttons' ); ?>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" data-css-animate>
+    <div class="container">
+      <h2 class="section__title section__title--text-center">
+        <span class="section__title-text">
+          TÜV-Zertifizierung
+        </span>
+      </h2>
+      <div class="text-section">
+        <div class="text-section__text text">
+          <p>
+            Die Asset-Firmengruppe ist mit allen ihren Standorten gemäß den Anforderungen nach ISO 9001:2015 TÜV-Zertifiziert.
+          </p>
+          <p>
+            <a href="#tuev-zertifikate" data-src="#tuev-zertifikate" data-fancybox="#tuev-zertifikate" class="button button--arrow">
+              Zertifikate anzeigen
+              <lottie-player
+                src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                background="transparent"
+                speed="1"
+                style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+              ></lottie-player>
+            </a>
+          </p>
+          <div class="dialog" id="tuev-zertifikate" style="display:none;">
+            <ul class="download-list">
+              <li>
+                <a href="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/Anlage-zum-Zertifikat-Bremen.pdf" target="_blank">
+                  <lottie-player
+                    src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                    background="transparent"
+                    speed="1"
+                    class="download-list__icon"
+                    style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+                  ></lottie-player>
+                  Hauptzertifikat
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/Anlage-zum-Zertifikat-Berlin.pdf" target="_blank">
+                  <lottie-player
+                    src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                    background="transparent"
+                    speed="1"
+                    class="download-list__icon"
+                    style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+                  ></lottie-player>
+                  Hauptzertifikat Anlage
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/Zertifikate-ASSET-Firmengruppe-Bremen.pdf" target="_blank">
+                  <lottie-player
+                    src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                    background="transparent"
+                    speed="1"
+                    class="download-list__icon"
+                    style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+                  ></lottie-player>
+                  TÜV Zertifikat Bremen
+                </a>
+              </li>
+              <li>
+                <a href="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/Zertifikat-ASSET-Firmengruppe-Berlin.pdf" target="_blank">
+                  <lottie-player
+                    src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                    background="transparent"
+                    speed="1"
+                    class="download-list__icon"
+                    style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+                  ></lottie-player>
+                  TÜV Zertifikat Berlin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
