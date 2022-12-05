@@ -13,11 +13,17 @@ $text_image = get_field( 'text-image' );
         <ul class="single-slider__items swiper-wrapper">
           <?php foreach( $gallery as $item ): ?>
             <li class="single-slider__item swiper-slide">
-              <a href="<?php echo array_shift( wp_get_attachment_image_src( $item, 'large' ) ); ?>" class="single-slider__link">
-                <div class="single-slider__image-wrapper responsive-image-wrapper">
-                  <?php echo wp_get_attachment_image( $item, 'large', null, array( 'class' => 'single-slider__image responsive-image' ) ); ?>
-                </div>
-              </a>
+              <a href="<?php echo array_shift( wp_get_attachment_image_src( $item, 'large' ) ); ?>" class="single-slider__link"></a>
+              <lottie-player
+                src="<?php echo get_template_directory_uri(); ?>/src/json/Resize-Weiss.json"
+                background="transparent"
+                speed="1"
+                class="single-slider__image-icon"
+                style="width: 50px; height: 50px; transform:rotate(90deg);" loop autoplay
+              ></lottie-player>
+              <div class="single-slider__image-wrapper responsive-image-wrapper">
+                <?php echo wp_get_attachment_image( $item, 'large', null, array( 'class' => 'single-slider__image responsive-image' ) ); ?>
+              </div>
             </li>
           <?php endforeach; ?>
         </ul>

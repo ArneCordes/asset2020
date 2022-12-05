@@ -39,6 +39,7 @@ function theme_assets() {
   wp_enqueue_style('asset', get_stylesheet_directory_uri() . "/dist/bundle-v1.css");
   wp_enqueue_script('jquery');
   wp_enqueue_script('asset', dirname(get_bloginfo('stylesheet_url')) . '/dist/bundle-v1.js', NULL, false, true);
+  wp_enqueue_style('fancybox', dirname(get_bloginfo('stylesheet_url')) . '/src/vendor/fancybox/fancybox.css');
 }
 
 // Add AFC option pages
