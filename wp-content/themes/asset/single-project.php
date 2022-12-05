@@ -166,9 +166,15 @@ $text_image = get_field( 'text-image' );
         zu diesem Projekt?
       </h2>
       <div class="text-section__text text-section__text--narrow">
-        <p>
-          Wenn Sie Interesse an diesem Objekt haben, mehr erfahren wollen, oder über den weiteren Projektverlauf werden wollen, dann melden Sie sich doch! Wir beantworten Ihre Fragen gerne!
-        </p>
+        <?php if( get_field( 'add-to-references' ) ): ?>
+          <p>
+            Dieses Projekt wurde realisiert. Wenn Sie Interesse an aktuellen Objekten haben, oder mehr über unser Unternehmen erfahren wollen, dann melden Sie sich doch! Wir beantworten Ihre Fragen gerne!
+          </p>
+        <?php else: ?>
+          <p>
+            Wenn Sie Fragen zu diesem oder anderen aktuellen Projekten haben, dann melden Sie sich doch! Wir beantworten Ihre Fragen gerne!
+          </p>
+        <?php endif; ?>
       </div>
       <?php get_template_part( 'partials/contact-section-buttons' ); ?>
     </div>
