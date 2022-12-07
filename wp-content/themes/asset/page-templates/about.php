@@ -280,7 +280,7 @@
       </div>
     </div>
   </div>
-  <div class="section section--topspace-none" data-css-animate>
+  <div class="section section--topspace-none section--bottomspace-none" data-css-animate>
     <div class="container">
       <div class="link-list">
         <ul class="link-list__items">
@@ -320,6 +320,35 @@
             </a>
           </li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section--bottomspace-halve section--topspace-halve" data-css-animate>
+    <div class="container">
+      
+      <div class="text-section">
+        
+        <div class="text-section__text text">
+          <p>
+          Wir sind Mitglied in verschieden Bünden und Verbänden
+          </p>
+          <ul class="logo-list">
+            <li class="logo-list__item">
+              <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/logo-arge.png" class="logo-list__logo" alt="Dummy">
+            </li>
+            <li class="logo-list__item">
+              <a href="https://www.bfw-nb.de/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/logo-bfw.png" class="logo-list__logo" alt="Dummy">
+              </a>
+            </li>
+            <li class="logo-list__item">
+              <a href="https://www.vhw.de/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/logo-vhw.png" class="logo-list__logo" alt="Dummy">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
