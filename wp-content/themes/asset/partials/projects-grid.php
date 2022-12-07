@@ -15,9 +15,6 @@ $projects = get_posts( [
           <div class="image-grid__content image-grid__content--<?php echo $i == 0 ? 'vertical' : 'overlay'; ?>">
             <div class="image-grid__headline">
               <?php echo get_the_title( $project->ID ); ?>
-              <?php if( $i == 0 ): ?>
-                /<br><?php the_field( 'location', $project->ID ); ?>
-              <?php endif; ?>
             </div>
             <span class="image-grid__more">
               <span class="image-grid__more-text">
