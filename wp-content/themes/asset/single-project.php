@@ -175,6 +175,30 @@ $text_image = get_field( 'text-image' );
   </div>
 <?php endif; ?>
 
+<?php
+if( !empty( $_SERVER['HTTP_REFERER'] ) ) {
+  $back_url = $_SERVER['HTTP_REFERER'];
+} else {
+  $back_url = '/projekte/';
+}
+?>
+
+<div class="single-project__back-section section section--bottomspace-halve" data-css-animate>
+  <a href="<?php echo $back_url; ?>" class="single-project__back-button button button--arrow button--back">
+  <lottie-player
+    src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+    background="transparent"
+    speed="1"
+    style="width: 30px; height: 30px; transform: rotate(90deg) translateX(-1px);" loop autoplay
+  ></lottie-player>
+    <?php if( !empty( $_SERVER['HTTP_REFERER'] ) ): ?>
+      Zurück
+     <?php else: ?>
+      Zur Übersicht
+     <?php endif; ?>
+  </a>
+</div>
+
 <div class="section section--topspace-none" data-css-animate>
   <div class="container">
     <div class="text-section">

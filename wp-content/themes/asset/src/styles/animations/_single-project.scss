@@ -25,3 +25,13 @@
   transition: all 1s;
   transition-delay: 0.6s;
 }
+
+.css-animate .single-project__back-button {
+  opacity: 0;
+}
+
+.css-animate--start .single-project__back-button {
+  opacity: 1;
+  transition: all 1s !important;
+  transition-delay: 0.6s;
+}
