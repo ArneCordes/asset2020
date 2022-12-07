@@ -151,6 +151,18 @@ $text_image = get_field( 'text-image' );
           <?php endif; ?>
           <div class="text-image__text text">
             <?php echo $text_image['text']; ?>
+
+            <?php if( $text_image['show-link'] ): ?>
+              <a href="<?php echo $text_image['link-url']; ?>" class="button button--arrow" target="_blank">
+              <?php echo $text_image['link-text']; ?>
+                <lottie-player
+                  src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(1px);" loop autoplay
+                ></lottie-player>
+              </a>
+            <?php endif; ?>
           </div>
         </div>
         <div class="text-image__media">
