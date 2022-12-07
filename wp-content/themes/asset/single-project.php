@@ -101,13 +101,18 @@ $text_image = get_field( 'text-image' );
       </h2>
       <a href="<?php echo $maps_url; ?>" class="location-map" target="_blank">
         <div class="location-map__image-wrapper responsive-image-wrapper">
-          <lottie-player
-            src="<?php echo get_template_directory_uri(); ?>/src/json/Location.json"
-            background="transparent"
-            speed="1"
-            class="location-map__marker"
-            style="width: 140px; height: 140px;" loop autoplay
-            ></lottie-player>
+          <div class="location-map__marker">
+            <lottie-player
+              src="<?php echo get_template_directory_uri(); ?>/src/json/Location.json"
+              background="transparent"
+              speed="1"
+              class="location-map__marker-icon"
+              style="width: 140px; height: 140px;" loop autoplay
+              ></lottie-player>
+             <span class="location-map__marker-text">
+              Zu Google Maps
+             </span>
+          </div>
           <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/map.jpg" class="location-map__image responsive-image" alt="Karte">
         </div>
       </a>
