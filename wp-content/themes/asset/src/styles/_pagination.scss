@@ -1,5 +1,9 @@
 .pagination {
-  margin-top: 100px;
+  margin-top: 50px;
+
+  @include respond-min($screen-md) {
+    margin-top: 100px;
+  }
 
   &:after {
     position: absolute;
@@ -24,8 +28,16 @@
   position: relative;
   z-index: 20;
   padding: 0 20px;
-  margin-right: 33%;
+  margin-right: 30px;
   background-color: #fff;
+
+  @include respond-min($screen-xs) {
+    margin-right: 50px;
+  }
+
+  @include respond-min($screen-md) {
+    margin-right: 33%;
+  }
 }
 
 .pagination .navigation {

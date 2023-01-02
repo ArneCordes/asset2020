@@ -1,10 +1,14 @@
 .page-footer {
   position: relative;
-  padding-bottom: 180px;
+  padding-bottom: 110px;
   color: $color-darkgray;
   font-size: 1.06rem;
   line-height: 1.5;
   background-color: #fff;
+
+  @include respond-min($screen-sm) {
+    padding-bottom: 180px;
+  }
 }
 
 .page-footer--bg-lightgray {
@@ -13,18 +17,43 @@
 
 .page-footer__inner {
   position: relative;
-  padding: 90px 30px;
+  padding: 90px 0;
   border-top: 1.5px solid $color-darkgray;
   border-bottom: 1.5px solid $color-darkgray;
+
+  @include respond-min($screen-xl) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .page-footer__row {
-  display: flex;
+  @include respond-min($screen-sm) {
+    display: flex;
+  }
+
+  @include respond-max($screen-xl) {
+    flex-wrap: wrap;
+  }
 }
 
 .page-footer__col {
-  padding: 10px 30px;
-  border-right: 1.5px solid $color-darkgray;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  @include respond-max($screen-sm) {
+    text-align: center;
+  }
+
+  @include respond-min($screen-sm) {
+    border-right: 1.5px solid $color-darkgray;
+  }
+
+  @include respond-min($screen-xl) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
 
   &:last-child {
     border-right: none;
@@ -32,10 +61,46 @@
   }
 }
 
+@include respond-max($screen-xl) {
+  .page-footer__col--logo,
+  .page-footer__col--company {
+    flex: 0 0 50%;
+
+    @include respond-max($screen-sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .page-footer__col--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-footer__col--company {
+    border: none;
+  }
+
+  .page-footer__col--menu  {
+    flex: 0 0 25%;
+    margin-top: 50px;
+    text-align: center;
+
+    @include respond-max($screen-sm) {
+      margin-top: 0;
+      padding: 0;
+    }
+  }
+}
+
 .page-footer__logo {
   display: block;
-  width: 200px;
+  width: 150px;
   height: auto;
+
+  @include respond-min($screen-sm) {
+    width: 200px;
+  }
 }
 
 .page-footer__menu {
@@ -44,14 +109,16 @@
 
   li {
     &:not(:last-child) {
-      margin-bottom: 0.5em;
+      @include respond-min($screen-sm) {
+        margin-bottom: 0.5em;
+      }
     }
   }
 }
 
 .page-footer__scroll {
   position: absolute;
-  right: 125px;
+  right: 35px;
   top: calc(100% - 15px);
   display: flex;
   flex-direction: column;
@@ -62,6 +129,10 @@
   font-size: 0.75rem;
   line-height: 1.2;
   text-align: center;
+
+  @include respond-min($screen-sm) {
+    right: 125px;
+  }
 
   &:hover {
     color: $color-darkgray;

@@ -3,6 +3,7 @@ import './lib/css-animate.js';
 import './lib/count-up.js';
 import './global.js';
 import './main.js';
+import './nav.js';
 import './news-slider.js';
 import './image-slider.js';
 import './single-slider.js';

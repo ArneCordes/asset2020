@@ -1,19 +1,53 @@
 .facts {
   display: flex;
   justify-content: center;
-  padding-top: 180px;
+  padding-top: 60px;
   gap: 20px;
+
+  @include respond-max($screen-xl) {
+    max-width: 740px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  @include respond-min($screen-sm) {
+    padding-top: 100px;
+  }
+
+  @include respond-min($screen-md) {
+    padding-top: 180px;
+  }
 }
 
 .facts__item {
-  flex-basis: 100%;
   text-align: center;
+
+  @include respond-max($screen-xl) {
+    flex: 0 0 20%;
+  }
+
+  @include respond-max($screen-sm) {
+    flex: 0 0 100%;
+  }
+
+  @include respond-min($screen-xl) {
+    flex-basis: 100%;
+  }
 }
 
 .facts__number {
   font-family: 'Greta Text Bold 3';
   color: $color-main;
-  font-size: 4.7rem;
+  font-size: 3rem;
+
+  @include respond-min($screen-xs) {
+    font-size: 3.5rem;
+  }
+
+  @include respond-min($screen-md) {
+    font-size: 4.7rem;
+  }
 }
 
 .facts__caption {

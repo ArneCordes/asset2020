@@ -1,8 +1,8 @@
-window.ScreenXS = 0;
-window.ScreenSM = 0;
-window.ScreenMD = 999;
+window.ScreenXS = 550;
+window.ScreenSM = 768;
+window.ScreenMD = 1100;
 window.ScreenLG = 0;
-window.ScreenXL = 0;
+window.ScreenXL = 1400;
 
 (function($) {
   setVh();

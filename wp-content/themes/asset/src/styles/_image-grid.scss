@@ -1,19 +1,34 @@
 .image-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  @include respond-min($screen-sm) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .image-grid__item {
   position: relative;
   aspect-ratio: 2 / 1;
-  padding: 30px;
+  padding: 20px;
   box-sizing: border-box;
+
+  @include respond-max($screen-sm) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include respond-min($screen-xs) {
+    padding: 30px;
+  }
 }
 
 .image-grid__item--highlight {
   grid-column: 1 / 3;
-  padding: 50px 70px;
+
+  @include respond-min($screen-md) {
+    padding: 50px 70px;
+  }
 }
 
 .image-grid__item-inner {
@@ -57,10 +72,13 @@ a.image-grid__item-inner:hover .image-grid__image {
 
 .image-grid__headline {
   @extend %font-blair;
-  font-size: 1.25rem;
   font-weight: 600;
   color: $color-darkgray;
   transition: font-size 1s;
+
+  @include respond-min($screen-md) {
+    font-size: 1.25rem;
+  }
 }
 
 .image-grid__item--default .image-grid__headline {
@@ -69,8 +87,16 @@ a.image-grid__item-inner:hover .image-grid__image {
 }
 
 .image-grid__item--highlight .image-grid__headline {
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   color: #fff;
+
+  @include respond-min($screen-xs) {
+    font-size: 1.8rem;
+  }
+
+  @include respond-min($screen-md) {
+    font-size: 2.2rem;  
+  }
 }
 
 .image-grid__item--highlight a.image-grid__item-inner:hover .image-grid__headline {
@@ -111,6 +137,10 @@ a.image-grid__item-inner:hover .image-grid__image {
 
 .image-grid__content--vertical .image-grid__more {
   margin-top: 20px;
+
+  @include respond-max($screen-md) {
+    display: none;
+  }
 }
 
 .image-grid__content--overlay .image-grid__more {

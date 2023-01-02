@@ -8,7 +8,7 @@ $projects = get_posts( [
 ?>
 
 <?php if( $projects ): ?>
-  <div class="section section--half-bg" data-css-animate>>
+  <div class="section section--half-bg" data-css-animate>
     <div class="container container--wide">
       <h2 class="section__title">
         <span class="section__title-text">

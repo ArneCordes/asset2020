@@ -5,8 +5,12 @@ html {
 }
 
 body {
-  padding-top: 115px;
+  padding-top: 60px;
   color: $color-text;
+
+  @include respond-min($screen-md) {
+    padding-top: 115px;
+  }
 }
 
 main {

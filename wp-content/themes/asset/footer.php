@@ -2,17 +2,17 @@
       <div class="container container--wide">
         <div class="page-footer__inner">
           <div class="page-footer__row">
-            <div class="page-footer__col">
+            <div class="page-footer__col page-footer__col--logo">
               <?php echo wp_get_attachment_image( get_theme_mod( 'logo_brand' ), 'full', null, array( 'class' => 'page-footer__logo' ) ); ?>
             </div>
-            <div class="page-footer__col">
+            <div class="page-footer__col page-footer__col--company">
               <strong><i>ASSET Berlin Wohnimmobilien GmbH</i></strong><br>
               Am Waller Freihafen 1 a<br>
               28217 Bremen<br>
               Deutschland
             </div>
             <?php foreach( [1,2,3,4] as $i ): ?>
-              <div class="page-footer__col">
+              <div class="page-footer__col page-footer__col--menu page-footer__col--menu-<?php echo $i; ?>">
                 <?php
                 wp_nav_menu( array(
                   'theme_location' => "footer-{$i}",

@@ -1,5 +1,7 @@
 .text-image {
-  display: flex;
+  @include respond-min($screen-sm) {
+    display: flex;
+  }
 }
 
 .text-image__roof--simple {
@@ -8,18 +10,22 @@
   font-weight: bold;
   font-size: 0.75rem;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: $color-main;
 
-  &:before {
-    position: absolute;
-    left: calc(100% + 10px);
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-    height: 1.5px;
-    background-color: $color-main;
-    content: "";
+  @include respond-min($screen-sm) {
+    margin-bottom: 40px;
+
+    &:before {
+      position: absolute;
+      left: calc(100% + 10px);
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100px;
+      height: 1.5px;
+      background-color: $color-main;
+      content: "";
+    }
   }
 }
 
@@ -47,8 +53,15 @@
 
 .text-image__content,
 .text-image__media {
-  flex: 0 0 50%;
   box-sizing: border-box;
+}
+
+.text-image__media {
+  flex: 0 0 40%;
+
+  @include respond-min($screen-md) {
+    flex: 0 0 50%;
+  }
 }
 
 .text-image__image-wrapper {
@@ -63,12 +76,14 @@
   order: -1;
 }
 
-.text-image--image-offset .text-image__media {
-  margin-top: -140px;
-}
-
-.text-image--image-offset-lg .text-image__media {
-  margin-top: -200px;
+@include respond-min($screen-sm) {
+  .text-image--image-offset .text-image__media {
+    margin-top: -140px;
+  }
+  
+  .text-image--image-offset-lg .text-image__media {
+    margin-top: -200px;
+  }
 }
 
 .text-image__media-link:hover .text-image__image {
@@ -77,27 +92,52 @@
 
 .text-image__content {
   position: relative;
-  z-index: 50;
-  padding-right: 60px;
+
+  @include respond-max($screen-sm) {
+    margin-bottom: 40px;
+  }
+
+  @include respond-min($screen-sm) {
+    flex: 0 0 60%;
+    z-index: 50;
+    padding-right: 40px;
+  }
+
+  @include respond-min($screen-md) {
+    flex: 0 0 50%;
+    padding-right: 60px;
+  }
 }
 
 .text-image__content--right {
-  text-align: right;
+  @include respond-min($screen-sm) {
+    text-align: right;
+  }
 }
 
 .text-image--reverse .text-image__content {
-  padding-left: 60px;
+  @include respond-min($screen-sm) {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+
+  @include respond-min($screen-md) {
+    padding-left: 60px;
+  }
 }
 
 
 .text-image__headline {
   @extend %font-blair;
-  font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: bold;
   color: $color-darkgray;
   line-height: 1.6;
   margin-bottom: 1em;
+
+  @include respond-min($screen-sm) {
+    font-size: 1.25rem; 
+  }
 }
 
 .text-image__headline--bottomspace-lg {
@@ -106,6 +146,10 @@
 
 .text-image__button {
   font-size: 1.065rem;
-  margin-top: 40px;
+  margin-top: 20px;
   transition: none !important;
+
+  @include respond-min($screen-sm) {
+    margin-top: 40px;
+  }
 }

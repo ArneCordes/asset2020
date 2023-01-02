@@ -16,37 +16,39 @@ $press_releases = get_posts( [
       </span>
     </h2>
     <div class="news-slider" data-css-animate>
-      <div class="news-slider__wrapper swiper">
-        <ul class="news-slider__items swiper-wrapper">
-          <?php foreach( $press_releases as $press_release ): ?>
-            <li class="news-slider__item swiper-slide">
-              <div class="news-slider__roof">
-                <?php the_field( 'medium', $press_release->ID ); ?>
-              </div>
-              <div class="news-slider__content">
-                <h3 class="news-slider__headline">
-                  <?php echo get_the_title( $press_release->ID ); ?>
-                </h3>
-                <div class="news-slider__text text">
-                  <p>
-                    <?php the_field( 'short-text', $press_release->ID ); ?>
-                  </p>
-                  <p>
-                    <a href="<?php echo get_the_permalink( $press_release->ID ); ?>" class="button button--arrow">
-                      Zum Artikel
-                      <lottie-player
-                        src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
-                        background="transparent"
-                        speed="1"
-                        style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(2px);" loop autoplay
-                      ></lottie-player>
-                    </a>
-                  </p>
+      <div class="news-slider__wrapper">
+        <div class="news-slider__swiper swiper">
+          <ul class="news-slider__items swiper-wrapper">
+            <?php foreach( $press_releases as $press_release ): ?>
+              <li class="news-slider__item swiper-slide">
+                <div class="news-slider__roof">
+                  <?php the_field( 'medium', $press_release->ID ); ?>
                 </div>
-              </div>
-            </li>
-          <?php endforeach; ?>
-        </ul>
+                <div class="news-slider__content">
+                  <h3 class="news-slider__headline">
+                    <?php echo get_the_title( $press_release->ID ); ?>
+                  </h3>
+                  <div class="news-slider__text text">
+                    <p>
+                      <?php the_field( 'short-text', $press_release->ID ); ?>
+                    </p>
+                    <p>
+                      <a href="<?php echo get_the_permalink( $press_release->ID ); ?>" class="button button--arrow">
+                        Zum Artikel
+                        <lottie-player
+                          src="<?php echo get_template_directory_uri(); ?>/src/json/Scroll-Pfeile.json"
+                          background="transparent"
+                          speed="1"
+                          style="width: 30px; height: 30px; transform: rotate(-90deg) translateX(2px);" loop autoplay
+                        ></lottie-player>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
         <div class="news-slider__pagination swiper-pagination"></div>
       </div>
       <div class="news-slider__nav">
