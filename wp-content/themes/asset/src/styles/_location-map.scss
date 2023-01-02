@@ -22,14 +22,9 @@
 }
 
 .location-map__marker-text {
-  opacity: 0;
   font-family: "Greta Text Bold 3";
   color: $color-darkgray;
   transition: opacity $transition-speed;
-}
-
-.location-map:hover .location-map__marker-text {
-  opacity: 1;
 }
 
 .location-map__marker:hover .location-map__marker-text {
