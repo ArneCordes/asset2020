@@ -1,11 +1,17 @@
 .multicol-text {
-  padding-top: 70px;
+  padding-top: 40px;
   padding-bottom: 70px;
   margin-bottom: 30px;
   border-bottom: 1.5px solid $color-darkgray;
+
+  @include respond-min($screen-sm) {
+    padding-top: 70px;
+  }
 }
 
 .multicol-text__text {
-  columns: 2;
-  column-gap: 60px;
+  @include respond-min($screen-sm) {
+    columns: 2;
+    column-gap: 60px;
+  }
 }

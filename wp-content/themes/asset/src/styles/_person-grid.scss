@@ -1,7 +1,7 @@
 .person-grid {
   position: relative;
   top: -120px;
-  display: flex;
+  
   max-width: 1140px;
   margin: 0 auto;
   justify-content: space-between;
@@ -9,11 +9,28 @@
   font-size: 1.25rem;
   color: $color-darkgray;
 
+  @include respond-max($screen-sm) {
+    margin-top: 90px;
+    top: -100px;
+    max-width: 200px;
+  }
+
+  @include respond-min($screen-sm) {
+    display: flex;
+  }
+
   a:hover {
     color: $color-main;
   }
 }
 
 .person-grid__item {
-  flex: 0 0 240px;
+  @include respond-max($screen-sm) {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+  @include respond-min($screen-md) {
+    flex: 0 0 240px;
+  }
 }

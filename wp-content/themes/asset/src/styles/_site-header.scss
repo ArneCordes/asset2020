@@ -1,7 +1,10 @@
 .site-header,
 .site-header__content {
   max-width: 1140px;
-  aspect-ratio: 16 / 8;
+
+  @include respond-min($screen-md) {
+    aspect-ratio: 16 / 8;
+  }
 }
 
 .site-header {
@@ -10,15 +13,22 @@
 
 .site-header__content {
   @extend .container;
-  position: fixed;
-  left: 50%;
   display: flex;
-  width: 100%;
-  transform: translateX(-50%);
-  aspect-ratio: 16 / 8;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include respond-max($screen-md) {
+    min-height: 50vh;
+  }
+
+  @include respond-min($screen-md) {
+    position: fixed;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    aspect-ratio: 16 / 8;
+  }
 }
 
 .site-header__content--centered {
@@ -35,11 +45,22 @@
 }
 
 .site-header__headline {
-  opacity: 0;
   @extend %font-blair;
   padding-left: 50px;
   padding-right: 50px;
-  font-size: 2.815rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: $color-darkgray;
+
+  @include respond-max($screen-sm) {
+    text-align: center;
+  }
+
+  @include respond-min($screen-sm) {
+    font-size: 2.3rem;
+  }
+  
+  @include respond-min($screen-md) {
+    font-size: 2.815rem;
+  }
 }

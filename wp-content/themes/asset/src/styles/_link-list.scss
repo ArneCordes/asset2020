@@ -1,32 +1,43 @@
 .link-list {
   max-width: 980px;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-top: 1px solid $color-main;
   border-bottom: 1px solid $color-main;
   color: $color-darkgray;
   font-weight: bold;
   font-size: 1.065rem;
   text-transform: uppercase;
+
+  @include respond-min($screen-sm) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .link-list__items {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 750px;
-  margin: 0 auto;
-  margin-bottom: -25px;
-  box-sizing: border-box;
+  @include respond-min($screen-sm) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: -25px;
+    box-sizing: border-box;
+  }
 }
 
 .link-list__item {
-  flex: 0 0 50%;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-bottom: 25px;
   font-family: "Greta Text Bold\ 3";
   box-sizing: border-box;
+  margin-bottom: 15px;
+
+  @include respond-min($screen-sm) {
+    flex: 0 0 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 

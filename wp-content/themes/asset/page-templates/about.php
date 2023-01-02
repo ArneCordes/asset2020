@@ -227,7 +227,7 @@
           Immobilien Investment<br>
           ist <span class="color-main">Vertrauenssache.</span>
         </h2>
-        <div class="multicol-text__text">
+        <div class="multicol-text__text text">
           <p>
             Die vorgestellten Objekte, ob auf eigene Rechnung oder im fremden Auftrag ausgeführt, zeichneten sich durch eine solide Projektplanung und Finanzierung aus. Diese solide und zuverlässige Betreuung von der Planung bis zum Verkauf oder Ver-mietung bewährte sich besonders in wirtschaftlich schwierigen Zeiten. Die sorg-fältige Auswahl fachlich kompetenter, leistungsfähiger Architekten und Baudienst-leister trug zum Erfolg bei. Das gilt genauso für die Verwaltung der Objekte nach Fertigstellung. Langfristige Mietverträge sind der Beweis für das Vertrauen, das unsere Arbeit bei Handelsunternehmen oder anderen gewerblichen Mietern genießt.
           </p>

@@ -1,11 +1,15 @@
 .text-cite {
-  display: flex;
-  gap: 70px;
+  @include respond-min($screen-sm) {
+    display: flex;
+    gap: 70px;
+  }
 }
 
 .text-cite__content {
-  flex-basis: 50%;
-  text-align: right;
+  @include respond-min($screen-sm) {
+    flex-basis: 50%;
+    text-align: right;
+  }
 }
 
 .text-cite__roof {
@@ -20,6 +24,10 @@
 .text-cite__cite {
   @extend .text-image__headline;
   flex: 0 0 50%;
+
+  @include respond-max($screen-sm) {
+    text-align: center;
+  }
 }
 
 .text-cite__headline {
@@ -27,12 +35,18 @@
 }
 
 .text-cite__text {
-  max-width: 500px;
-  margin-left: auto;
+  @include respond-min($screen-sm) {
+    max-width: 500px;
+    margin-left: auto;
+  }
 }
 
 .text-cite__cite {
-  margin-top: 80px;
-  flex-basis: 50%;
-  font-size: 1.5rem;
+  margin-top: 50px;
+  
+  @include respond-min($screen-sm) {
+    flex-basis: 50%;
+    margin-top: 80px;
+    font-size: 1.5rem;
+  }
 }

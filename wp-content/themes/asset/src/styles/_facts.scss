@@ -11,6 +11,10 @@
     gap: 50px;
   }
 
+  @include respond-max($screen-sm) {
+    gap: 30px;
+  }
+
   @include respond-min($screen-sm) {
     padding-top: 100px;
   }
@@ -39,7 +43,7 @@
 .facts__number {
   font-family: 'Greta Text Bold 3';
   color: $color-main;
-  font-size: 3rem;
+  font-size: 2.5rem;
 
   @include respond-min($screen-xs) {
     font-size: 3.5rem;

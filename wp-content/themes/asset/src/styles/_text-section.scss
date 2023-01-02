@@ -1,9 +1,9 @@
 .text-section {
   padding-top: 60px;
-  text-align: center;
 
   @include respond-min($screen-sm) {
     padding-top: 130px;
+    text-align: center;
   }
 }
 
@@ -18,11 +18,15 @@
 .text-section__headline {
   @extend %font-blair;
   font-weight: bold;
-  font-size: 1.25rem;
   line-height: 1.7;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: $color-darkgray;
+
+  @include respond-min($screen-sm) {
+    margin-bottom: 60px;
+    font-size: 1.25rem;
+  }
 }
 
 .text-section__headline--alt {
@@ -31,14 +35,19 @@
 }
 
 .text-section__headline--lg {
-  font-size: 1.8rem;
   line-height: 1.5;
-  margin-bottom: 40px;
+  
+  @include respond-min($screen-sm) {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
 }
 
 .text-section__text {
-  max-width: 600px;
-  margin: 0 auto;
+  @include respond-min($screen-sm) {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .text-section__text--narrow {

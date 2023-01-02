@@ -11,7 +11,11 @@
 }
 
 .section--topspace-halve {
-  padding-top: 70px;
+  padding-top: 35px;
+
+  @include respond-min($screen-sm) {
+    padding-top: 70px;
+  }
 }
 
 .section--topspace-none {
@@ -19,7 +23,11 @@
 }
 
 .section--bottomspace-halve {
-  padding-bottom: 70px;
+  padding-bottom: 30px;
+
+  @include respond-min($screen-sm) {
+    padding-bottom: 70px;
+  }
 }
 
 .section--bottomspace-none {
@@ -61,7 +69,9 @@
 }
 
 .section__title--arrow {
-  background-position: left calc(50% + 1px);
+  @include respond-min($screen-sm) {
+    background-position: left calc(50% + 1px);
+  }
 }
 
 @include respond-min($screen-md) {
