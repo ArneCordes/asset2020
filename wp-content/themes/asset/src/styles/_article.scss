@@ -1,12 +1,26 @@
 .article {
-  padding-top: 60px;
-  padding-left: 145px;
-  padding-right: 100px;
+  padding-top: 40px;
+
+  @include respond-min($screen-sm) {
+    padding-top: 60px;
+  }
+
+  @include respond-min($screen-md) {
+    padding-left: 145px;
+    padding-right: 100px;
+  }
+  
 }
 
 .article__content {
-  display: flex;
-  gap: 150px;
+  @include respond-min($screen-sm) {
+    display: flex;
+    gap: 70px;
+  }
+
+  @include respond-min($screen-md) {
+    gap: 150px;
+  }
 }
 
 .article__headline {
@@ -16,11 +30,18 @@
 
 .article__text {
   flex-grow: 1;
-  font-size: 1.125rem;
+
+  @include respond-min($screen-sm) {
+    font-size: 1.125rem;
+  }
 }
 
 .article__aside {
   flex: 0 0 200px;
+
+  @include respond-max($screen-sm) {
+    margin-top: 50px;
+  }
 }
 
 .article__text {

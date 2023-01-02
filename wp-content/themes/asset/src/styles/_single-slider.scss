@@ -3,14 +3,18 @@
 }
 
 .single-slider__image-wrapper {
-  aspect-ratio: 16 / 8;
+  @include respond-min($screen-sm) {
+    aspect-ratio: 16 / 8;
+  }
 }
 
 .single-slider__link {
-  position: absolute;
-  z-index: 20;
-  width: 100%;
-  height: 100%;
+  @include respond-min($screen-md) {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .single-slider__thumb-slider {

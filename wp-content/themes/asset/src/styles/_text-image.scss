@@ -37,9 +37,13 @@
 .text-image__roof--outside {
   @extend .section__title;
   position: relative;
-  top: -150px;
+  top: -100px;
   justify-content: flex-start;
   margin-bottom: 0;
+
+  @include respond-min($screen-sm) {
+    top: -150px;
+  }
 }
 
 .text-image__roof-text {

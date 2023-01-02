@@ -1,5 +1,20 @@
 .single-project__info {
-  padding: 60px 90px 0 90px;
+  padding-top: 40px;
+
+  @include respond-min($screen-sm) {
+    padding-top: 60px;
+  }
+
+  @include respond-min($screen-md) {
+    padding: 60px 90px 0 90px;  
+  }
+}
+
+.single-project__text-col {
+  @include respond-max($screen-sm) {
+    order: -1;
+    margin-bottom: 50px;
+  }
 }
 
 .single-project__microlage {
@@ -38,4 +53,8 @@
 
 .single-project__back-button {
   transition: none !important;
+
+  @include respond-max($screen-md) {
+    margin-bottom: 50px;
+  }
 }

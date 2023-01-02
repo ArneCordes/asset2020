@@ -12,8 +12,13 @@ $(function() {
     if($thumbSlider.length > 0) {
       var $thumbSwiperEl = $thumbSlider.find('.swiper');
       var thumbSwiper = new Swiper($thumbSwiperEl.get(0), {
-        slidesPerView: 13,
-        spaceBetween: 10
+        slidesPerView: 7,
+        spaceBetween: 10,
+        breakpoints: {
+          [window.ScreenSM]: {
+            slidesPerView: 13
+          }
+        }
       });
     }
 

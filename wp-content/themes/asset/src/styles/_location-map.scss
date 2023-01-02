@@ -6,7 +6,9 @@
 }
 
 .location-map__image-wrapper {
-  aspect-ratio: 16 / 6;
+  @include respond-min($screen-sm) {
+    aspect-ratio: 16 / 6;    
+  }
 }
 
 .location-map__marker {
@@ -33,4 +35,9 @@
 
 .location-map__marker-icon {
   margin: 0 auto;
+
+  @include respond-max($screen-sm) {
+    width: 80px !important;
+    height: 80px !important;
+  }
 }
