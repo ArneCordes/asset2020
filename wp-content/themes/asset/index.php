@@ -124,6 +124,9 @@
             Die Asset-Firmengruppe ist mit allen ihren Standorten gemäß den Anforderungen nach ISO 9001:2015 TÜV-Zertifiziert.
           </p>
           <p>
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/_tmp/iso-9001-klein.png" width="170" height="63" alt="ISO 9001">
+          </p>
+          <p>
             <a href="#tuev-zertifikate" data-src="#tuev-zertifikate" data-fancybox="#tuev-zertifikate" class="button button--arrow">
               Zertifikate anzeigen
               <lottie-player
