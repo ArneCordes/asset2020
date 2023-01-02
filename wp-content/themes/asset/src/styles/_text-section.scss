@@ -60,6 +60,10 @@
   margin: 0 auto;
   margin-top: 60px;
   justify-content: space-between;
+
+  @include respond-max($screen-sm) {
+    text-align: center;
+  }
 }
 
 .text-section__buttons-item {
