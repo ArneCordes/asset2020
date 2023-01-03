@@ -11,7 +11,7 @@
           </div>
           <?php if( $source = get_sub_field( 'source' ) ): ?>
             <div class="quote__text-source">
-              <?php echo $source; ?>
+              &mdash; <?php echo $source; ?>
             </div>
           <?php endif; ?>
         </div>
