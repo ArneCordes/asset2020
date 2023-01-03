@@ -1,12 +1,18 @@
 .legal {
-  padding-left: 100px;
-  padding-right: 50px;
-  padding-top: 70px;
+  padding-top: 40px;
+
+  @include respond-min($screen-md) {
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-right: 50px;
+  }
 }
 
 .legal__block {
-  display: flex;
-  gap: 60px;
+  @include respond-min($screen-md) {
+    display: flex;
+    gap: 60px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 40px;
@@ -15,12 +21,19 @@
 
 .legal__headline {
   @extend %font-blair;
-  flex: 0 0 30%;
-  margin-top: 3px;
-  text-align: right;
   font-size: 0.75rem;
   color: $color-main;
   font-weight: bold;
+
+  @include respond-max($screen-md) {
+    margin-bottom: 1.3em;
+  }
+
+  @include respond-min($screen-md) {
+    flex: 0 0 30%;
+    margin-top: 3px;
+    text-align: right;
+  }
 }
 
 .legal__text {

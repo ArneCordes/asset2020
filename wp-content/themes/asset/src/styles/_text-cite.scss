@@ -24,10 +24,6 @@
 .text-cite__cite {
   @extend .text-image__headline;
   flex: 0 0 50%;
-
-  @include respond-max($screen-sm) {
-    text-align: center;
-  }
 }
 
 .text-cite__headline {
@@ -43,6 +39,10 @@
 
 .text-cite__cite {
   margin-top: 50px;
+
+  @include respond-max($screen-sm) {
+    text-align: center;
+  }
   
   @include respond-min($screen-sm) {
     flex-basis: 50%;

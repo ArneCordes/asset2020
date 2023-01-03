@@ -9,11 +9,11 @@
   @extend %font-blair;
   font-weight: bold;
   font-size: 0.75rem;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: $color-main;
 
   @include respond-min($screen-sm) {
+    margin-top: 10px;
     margin-bottom: 40px;
 
     &:before {

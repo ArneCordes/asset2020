@@ -6,11 +6,9 @@
       <div class="single-slider__wrapper">
         <ul class="single-slider__items">
           <li class="single-slider__item">
-            <a href="<?php echo array_shift( get_the_post_thumbnail_url( 'large' ) ); ?>" class="single-slider__link">
-              <div class="single-slider__image-wrapper responsive-image-wrapper">
-                <?php the_post_thumbnail( 'large', array( 'class' => 'single-slider__image responsive-image' ) ); ?>
-              </div>
-            </a>
+            <div class="single-slider__image-wrapper responsive-image-wrapper">
+              <?php the_post_thumbnail( 'large', array( 'class' => 'single-slider__image responsive-image' ) ); ?>
+            </div>
           </li>
         </ul>
       </div>

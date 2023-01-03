@@ -1,5 +1,9 @@
 .slider__nav-buttons {
   display: flex;
+
+  @include respond-max($screen-xl) {
+    display: none !important;
+  }
 }
 
 body .slider__button {
