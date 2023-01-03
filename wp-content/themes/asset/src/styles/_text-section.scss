@@ -60,6 +60,7 @@
   margin: 0 auto;
   margin-top: 60px;
   justify-content: space-between;
+  overflow: hidden;
 
   @include respond-max($screen-sm) {
     text-align: center;
