@@ -25,3 +25,9 @@
   top: 10px;
   right: 10px;
 }
+
+.single-slider__nav-buttons {
+  @include respond-max($screen-xl) {
+    display: none !important;
+  }
+}

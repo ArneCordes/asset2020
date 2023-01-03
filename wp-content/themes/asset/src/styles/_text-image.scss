@@ -113,7 +113,7 @@
   }
 }
 
-.text-image__content--right {
+.text-image__content {
   @include respond-min($screen-sm) {
     text-align: right;
   }
@@ -122,11 +122,17 @@
 .text-image--reverse .text-image__content {
   @include respond-min($screen-sm) {
     padding-left: 40px;
-    padding-right: 0;
+    text-align: left;
   }
 
   @include respond-min($screen-md) {
     padding-left: 60px;
+  }
+}
+
+.text-image--image-offset .text-image__content {
+  @include respond-min($screen-sm) {
+    text-align: left;
   }
 }
 

@@ -1,36 +1,21 @@
-<?php // Template name: Legal ?>
+<?php // Template name: Kontakt ?>
 
 <?php get_header(); ?>
 
-<div class="site-header site-header--bg-lightgray" data-css-animate>
-  <div class="site-header__content">
-    <h1 class="site-header__headline">
-      Wir sind <span class="color-main">für Sie da.</span>
-    </h1>
-  </div>
-</div>
-
-<main>
-  <div class="section section--topspace-none" data-css-animate>
-    <div class="container">
-      <h2 class="section__title section__title--text-left section__title--arrow">
-        <span class="section__title-text">
-          Kontakt
-        </span>
-      </h2>
-      <div class="text-section">
-        <h2 class="text-section__headline">
-          <span class="color-main">Sprechen sie uns an!</span>
-        </h2>
-        <div class="text-section__text">
-          <p>
-            Sie haben Fragen zu unserem Unternehmen oder interessieren sich für ein spezielles Objekt? Sprechen Sie uns an, oder schreiben Sie uns eine Mail! Wir helfen Ihnen gerne!
-          </p>
-        </div>
-        <?php get_template_part( 'partials/contact-section-buttons' ); ?>
-      </div>
+<?php if( $site_title = get_field( 'site-title' ) ): ?>
+  <div class="site-header site-header--bg-lightgray" data-css-animate>
+    <div class="site-header__content">
+      <h1 class="site-header__headline">
+        <?php echo format_text( $site_title ); ?>
+      </h1>
     </div>
   </div>
+<?php endif; ?>
+
+<main>
+  <?php if( have_rows( 'contents' ) ) : while( have_rows( 'contents' ) ) : the_row(); ?>
+    <?php get_template_part( 'partials/content/' . get_row_layout() ); ?>
+  <?php endwhile; endif; ?>
 
   <div class="section section--topspace-none" data-css-animate>
     <div class="container container--wide">

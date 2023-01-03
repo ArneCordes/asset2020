@@ -3,7 +3,9 @@ if(strstr($_SERVER['SERVER_NAME'], '.local')) {
   require_once('lib/vendor/krumo/class.krumo.php');
 }
 
+require_once('lib/helpers.php');
 require_once('lib/customizer.php');
+require_once('lib/shortcodes.php');
 require_once('lib/hero/hero.php');
 require_once('lib/project/project.php');
 require_once('lib/press-release/press-release.php');
@@ -23,6 +25,13 @@ function theme_setup() {
     'footer-3' => 'Footer-Menü 3',
     'footer-4' => 'Footer-Menü 4'
   ) );
+}
+
+// Enqueue backend stylesheets & scripts
+add_action('admin_enqueue_scripts', 'admin_assets');
+
+function admin_assets() {
+   wp_enqueue_script('admin-scripts', dirname(get_bloginfo('stylesheet_url')) . '/admin.js', NULL, false, true);
 }
 
 // Remove editor from pages
