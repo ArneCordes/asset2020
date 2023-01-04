@@ -74,7 +74,8 @@ a.image-grid__item-inner:hover .image-grid__image {
   @extend %font-blair;
   font-weight: 600;
   color: $color-darkgray;
-  transition: font-size 1s;
+  transition: all 1s;
+  transform-origin: left bottom;
 
   @include respond-min($screen-md) {
     font-size: 1.25rem;
@@ -100,7 +101,7 @@ a.image-grid__item-inner:hover .image-grid__image {
 }
 
 .image-grid__item--highlight a.image-grid__item-inner:hover .image-grid__headline {
-  font-size: 2rem;
+  transform: scale(0.9);
 }
 
 .image-grid__content--overlay .image-grid__headline {
