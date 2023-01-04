@@ -22,6 +22,7 @@
   @extend %font-blair;
   margin-left: auto;
   font-size: 0.813rem;
+  text-transform: uppercase;
 
   @include respond-max($screen-xl) {
     padding-right: 40px;
