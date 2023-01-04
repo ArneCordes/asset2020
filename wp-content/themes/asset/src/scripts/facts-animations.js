@@ -3,11 +3,13 @@
       $animEls;
 
   $(function() {
-    registerBreakpoint(ScreenMD, function() {
-      initFactsAnimations();
-    }, function() {
-      removeFactsAnimations();
-    });
+    initFactsAnimations();
+
+    // registerBreakpoint(ScreenMD, function() {
+    //   initFactsAnimations();
+    // }, function() {
+    //   removeFactsAnimations();
+    // });
   });
 
   function initFactsAnimations() {
