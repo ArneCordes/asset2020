@@ -27,7 +27,7 @@
                   </div>
                   <a href="<?php the_permalink(); ?>" class="text-image__button button hover-text">
                     <span class="hover-text__text">
-                      Mehr efahren
+                      Mehr erfahren
                     </span>
                     <span class="hover-text__overlay">
                       <span class="hover-text__overlay-text">
