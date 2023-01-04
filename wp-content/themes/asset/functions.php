@@ -52,17 +52,27 @@ function theme_assets() {
 }
 
 // Add AFC option pages
-// add_action('init', 'add_option_pages', 10);
-//
-// function add_option_pages() {
-//   if(function_exists('acf_add_options_page')) {
-//     acf_add_options_page(array(
-//   		'menu_title'  => __('Options', 'asset'),
-//       'page_title'  => __('Options', 'asset'),
-//       'menu_slug'   => 'theme-options',
-//     ));
-//   }
-// }
+add_action('init', 'add_option_pages', 10);
+
+function add_option_pages() {
+  if(function_exists('acf_add_options_page')) {
+    acf_add_options_page(array(
+  		'menu_title'  => 'Optionen',
+      'page_title'  => 'Optionen',
+      'menu_slug'   => 'theme-options',
+    ));
+
+    acf_add_options_sub_page( array(
+      'title'         => 'Projekte',
+  		'parent_slug'   => 'theme-options'
+    ) );
+
+    acf_add_options_sub_page( array(
+      'title'         => 'News',
+  		'parent_slug'   => 'theme-options'
+    ) );
+  }
+}
 
 // Move Yoast to bottom
 add_filter('wpseo_metabox_prio', 'yoasttobottom');

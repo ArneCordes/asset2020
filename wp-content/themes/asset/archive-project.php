@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 
-<div class="site-header site-header--bg-lightgray" data-css-animate>
-  <div class="site-header__content">
-    <h1 class="site-header__headline">
-      Auch die komplexesten Projekte fangen ganz einfach an. <span class="color-main">Mit einer Idee.</span>
-    </h1>
+<?php if( $site_title = get_field( 'projects-site-title', 'option' ) ): ?>
+  <div class="site-header site-header--bg-lightgray" data-css-animate>
+    <div class="site-header__content">
+      <h1 class="site-header__headline">
+        <?php echo format_text( $site_title['site-title'] ); ?>
+      </h1>
+    </div>
   </div>
-</div>
+<?php endif; ?>
 
 <main>
   <div class="container">
@@ -59,14 +61,16 @@
   <div class="section section--topspace-none" data-css-animate>
     <div class="container">
       <div class="text-section">
-        <h2 class="text-section__headline color-main">
-          Sprechen sie uns an!
-        </h2>
-        <div class="text-section__text">
-          <p>
-            Sie haben Fragen zu unserem Unternehmen oder interessieren sich für ein spezielles Objekt? Sprechen Sie uns an, oder schreiben Sie uns eine Mail! Wir helfen Ihnen gerne!
-          </p>
-        </div>
+        <?php if( $headline = get_field( 'projects-contact_headline', 'option' ) ): ?>
+          <h2 class="text-section__headline color-main">
+            <?php echo $headline; ?>
+          </h2>
+        <?php endif; ?>
+        <?php if( $text = get_field( 'projects-contact_text', 'option' ) ): ?>
+          <div class="text-section__text">
+            <?php echo $text; ?>
+          </div>
+        <?php endif; ?>
         <?php get_template_part( 'partials/contact-section-buttons' ); ?>
       </div>
     </div>
